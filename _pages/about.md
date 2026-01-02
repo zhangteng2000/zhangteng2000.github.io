@@ -30,9 +30,9 @@ My research interests lie in functional analysis, operator theory,  and geometry
   Department of Analysis, Bolyai Institute  
   Advisor: Lajos Molnár
 
-
 - **B.S. in Mathematics**,  
-  Taiyuan University of Technology, Taiyuan, China, *09/2017–07/2021*
+  Taiyuan University of Technology, Taiyuan, China, *09/2017–07/2021*  
+  School of Mathematics
 
 ---
 ## Research Funding
