@@ -12,9 +12,7 @@ repository: "zhangteng2000/zhangteng2000.github.io"
 # Author Profile (sidebar)
 author:
   name: "Teng Zhang (张腾)"
-  avatar: "/images/zt1.jpg"
-
-avatar: "/images/zt1.jpg"
+  avatar: "zt1.jpg"
   bio: "We must know, and we will know!"
   location: "Szeged, Hungary"
 
