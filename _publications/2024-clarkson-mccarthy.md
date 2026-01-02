@@ -1,9 +1,9 @@
 ---
-title: "Sharp perturbation bounds on the Frobenius norm of subunitary and positive polar factor"
+title: "Full characterization of existence of Clarkson–McCarthy type inequalities"
 collection: publications
-year: 2025
+year: 2024
 preprint: true
-arxiv: "https://arxiv.org/abs/2507.14940"
-paperurl: "https://arxiv.org/abs/2507.14940"
-citation: "T. Zhang, *Sharp perturbation bounds on the Frobenius norm of subunitary and positive polar factor*, arXiv:2507.14940 (2025)."
+arxiv: "https://arxiv.org/abs/2410.21961"
+paperurl: "https://arxiv.org/abs/2410.21961"
+citation: "T. Zhang, *Full characterization of existence of Clarkson–McCarthy type inequalities*, arXiv:2410.21961 (2024)."
 ---
