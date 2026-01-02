@@ -5,34 +5,12 @@ layout: single
 author_profile: true
 ---
 
-{% include base_path %}
+### DEBUG: All publications
 
-## Preserver Problems
-{% for pub in site.publications reversed %}
-{% if pub.tags contains "Preserver" %}
-  {% include archive-single.html type="list" %}
-  {% endif %}
+{% for pub in site.publications %}
+- {{ pub.title }} | tags={{ pub.tags }} | year={{ pub.year }}
 {% endfor %}
 
----
-
-## Geometry of Polynomials
-{% for pub in site.publications reversed %}
-{% if pub.tags contains "Geometry of Polynomials" %}
-  {% include archive-single.html type="list" %}
-  {% endif %}
-{% endfor %}
-
----
-
-## Matrix Inequalities
-{% for pub in site.publications reversed %}
-{% if pub.tags contains "Matrix Inequalities" %}
-  {% include archive-single.html type="list" %}
-  {% endif %}
-{% endfor %}
-
----
 
 
 
