@@ -1,4 +1,5 @@
 ---
+tags: [Matrix Inequalities]
 title: "An improvement and a generalization of Rotfel’d type inequalities for sectorial matrices"
 collection: publications
 year: 2025
