@@ -1,4 +1,5 @@
 ---
+tags: [Geometry of Polynomials]
 title: "Sharp Schoenberg type inequalities and the de Bruin–Sharma problem"
 collection: publications
 year: 2025
