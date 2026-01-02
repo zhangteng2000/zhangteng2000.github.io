@@ -57,14 +57,15 @@ My research interests lie in functional analysis, operator theory,  and geometry
 ---
 ## Awards and Honors
 
-- **Grand Prize Scholarship for PhD Student**
- *09/2024–09/2025*, Xi’an Jiaotong University
+- **Grand Prize Scholarship for PhD Student**,  
+  *09/2024–09/2025*, Xi’an Jiaotong University
 
 - **Outstanding Graduate Student**,  
   *09/2021–09/2025*, Xi’an Jiaotong University
   
 - **National Scholarship for Graduate Students**,  
   *09/2021–09/2022*, Xi’an Jiaotong University
+
 ---
 
 
