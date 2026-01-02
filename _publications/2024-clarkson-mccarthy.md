@@ -1,4 +1,5 @@
 ---
+tags: [Matrix Inequalities]
 title: "Full characterization of existence of Clarkson–McCarthy type inequalities"
 collection: publications
 year: 2024
