@@ -11,23 +11,23 @@ author_profile: true
 {% for pub in site.publications reversed %}
 {% if pub.tags contains "Preserver" %}
   {% include archive-single.html type="list" %}
-{% endif %}
-{% endfor %}
+{% end if %}
+{% end for %}
 
 ---
 
-## Polynomial Geometry
+## Geometry of Polynomials
 {% for pub in site.publications reversed %}
-{% if pub.tags contains "Polynomial Geometry" %}
+{% if pub.tags contains "Geometry of Polynomials" %}
   {% include archive-single.html type="list" %}
-{% endif %}
-{% endfor %}
+{% end if %}
+{% end for %}
 
 ---
 
-## Norm Inequalities
+## Matrix Inequalities
 {% for pub in site.publications reversed %}
-{% if pub.tags contains "Norm Inequalities" %}
+{% if pub.tags contains "Matrix Inequalities" %}
   {% include archive-single.html type="list" %}
-{% endif %}
-{% endfor %}
+{% end if %}
+{% end for %}
