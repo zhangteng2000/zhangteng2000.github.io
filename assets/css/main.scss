@@ -40,6 +40,10 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-.ai-sci-hub {
+/* Remove Sci-Hub / Academicons icons on publications page */
+.ai-sci-hub,
+.ai-sci-hub-square,
+.ai-scihub {
   display: none !important;
 }
+
