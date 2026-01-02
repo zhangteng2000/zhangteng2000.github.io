@@ -1,4 +1,5 @@
 ---
+tags: [Geometry of Polynomials]
 title: "A refinement of Pawlowski’s result"
 collection: publications
 year: 2025
