@@ -12,14 +12,14 @@ author_profile: true
     <a href="https://link.springer.com/article/10.1007/s11856-025-2890-3">
       <em>Proof of Audenaert–Kittaneh's conjecture</em>
     </a>,
-    <strong>Israel J. Math.</strong> (2025).
+   Israel J. Math. (2025).
   </li>
 
   <li value="6">
     <a href="https://www.ams.org/journals/proc/0000-000-00/S0002-9939-2025-17471-8/">
       <em>A refinement of Pawlowski’s result</em>
     </a>,
-    <strong>Proc. Amer. Math. Soc.</strong> (2025).
+    Proc. Amer. Math. Soc. (2025).
   </li>
 
   <li value="5">
@@ -29,14 +29,14 @@ author_profile: true
         Cauchy–Schwarz inequality
       </em>
     </a>,
-    <strong>Linear Algebra Appl.</strong> <strong>725</strong> (2025), 355–358.
+   Linear Algebra Appl. 725 (2025), 355–358.
   </li>
 
   <li value="4">
     <a href="https://doi.org/10.1016/j.jmaa.2024.128466">
       <em>When D-companion matrix meets incomplete polynomials</em>
     </a>,
-    <strong>J. Math. Anal. Appl.</strong> <strong>539</strong> (2024), 128466.
+   J. Math. Anal. Appl. 539 (2024), 128466.
   </li>
 
   <li value="3">
@@ -47,7 +47,7 @@ author_profile: true
         sectorial matrices
       </em>
     </a>,
-    <strong>Linear Multilinear Algebra</strong> <strong>73</strong> (2025),
+    Linear Multilinear Algebra 73 (2025),
     no. 4, 675–683.
   </li>
 
@@ -56,7 +56,7 @@ author_profile: true
     <a href="https://doi.org/10.1016/j.laa.2022.09.012">
       <em>A lower bound for the spectral radius of complex matrices</em>
     </a>,
-    <strong>Linear Algebra Appl.</strong> <strong>656</strong> (2023), 1–8.
+   Linear Algebra Appl. 656 (2023), 1–8.
   </li>
 
   <li value="1">
@@ -67,7 +67,7 @@ author_profile: true
         algebraic Riccati equation
       </em>
     </a>,
-    <strong>Appl. Math. Lett.</strong> <strong>132</strong> (2022),
+  Appl. Math. Lett. 132 (2022),
     Paper No. 108194, 8 pp.
   </li>
 </ol>
