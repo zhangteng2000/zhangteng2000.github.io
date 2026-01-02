@@ -19,7 +19,7 @@ My research interests lie in functional analysis, operator theory,  and geometry
 
 ## Education
 
-- **Ph.D. in Mathematics**,  
+- **Ph.D. Student in Mathematics**,  
   Xi'an Jiaotong University, Xi'an, China, *09/2021–Present*  
   School of Mathematics and Statistics  
   Advisor: Minghua Lin
