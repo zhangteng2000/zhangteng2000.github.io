@@ -8,27 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a **Ph.D. student in Mathematics** at the  
-[School of Mathematics and Statistics](https://math.xjtu.edu.cn/),  
-[Xi’an Jiaotong University](https://www.xjtu.edu.cn/),  
-under the supervision of  
-[Prof. Minghua Lin](http://gr.xjtu.edu.cn/en/web/mh.lin). I am also a **joint Ph.D. student** at the  
-**Department of Analysis, Bolyai Institute**,  
-**University of Szeged, Hungary**,  
-under the supervision of  
-[Prof. Lajos Molnár](https://www.math.u-szeged.hu/~molnarl/).
-
-My research interests lie in **functional analysis**, **operator theory**,  
-and **geometry of polynomials**.
-
-More specifically, I study  
-**transformations on operator algebras**,  
-**function algebras**, and **quantum structures**,  
-with a focus on **preserver problems**,  
-**local and nonlinear transformations**,  
-and **value distribution problems of polynomials**.
+I am a **Ph.D. student** in Mathematics at the  [School of Mathematics and Statistics](https://math.xjtu.edu.cn/),  [Xi’an Jiaotong University, China](https://www.xjtu.edu.cn/),  under the supervision of  [Prof. Minghua Lin](http://gr.xjtu.edu.cn/en/web/mh.lin) and a **joint Ph.D. student** at the [Department of Analysis, Bolyai Institute](https://www.math.u-szeged.hu/analysis/),  [University of Szeged, Hungary](https://u-szeged.hu/),  under the supervision of  [Prof. Lajos Molnár](https://www.math.u-szeged.hu/~molnarl/).
 
 
+My research interests lie in **functional analysis**, **operator theory**,  and **geometry of polynomials**. More specifically, I study  *transformations on operator algebras*,  *function algebras*, and *quantum structures*,  with a focus on *preserver problems*,  *local and nonlinear transformations*,  *matrix inequalities* and *value distribution problems of polynomials*.
 
 
 You can find my CV here:  
