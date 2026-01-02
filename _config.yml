@@ -66,7 +66,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-# Collections (academicpages core)
+Collections (academicpages core)
 collections:
   teaching:
     output: true
