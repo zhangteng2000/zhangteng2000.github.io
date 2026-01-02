@@ -33,5 +33,36 @@ My research interests lie in functional analysis, operator theory,  and geometry
 - **B.S. in Mathematics**,  
   Taiyuan University of Technology, Taiyuan, China, *09/2017–07/2021*
 
+---
+
+## Publications
+
+{% raw %}{% include base_path %}
+
+### Preserver Problems
+{% for pub in site.publications reversed %}
+{% if pub.tags contains "Preserver" %}
+  {% include archive-single.html type="list" %}
+{% endif %}
+{% endfor %}
+
+---
+
+### Geometry of Polynomial
+{% for pub in site.publications reversed %}
+{% if pub.tags contains "Geometry of Polynomials" %}
+  {% include archive-single.html type="list" %}
+{% endif %}
+{% endfor %}
+
+---
+
+### Matrix Inequalities
+{% for pub in site.publications reversed %}
+{% if pub.tags contains "Matrix Inequalities" %}
+  {% include archive-single.html type="list" %}
+{% endif %}
+{% endfor %}
+{% endraw %}
 
 
