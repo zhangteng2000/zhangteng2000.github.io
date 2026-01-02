@@ -15,18 +15,10 @@ author:
   avatar: "ztphoto.png"
   bio: "We must know, and we will know!"
   location: "Szeged, Hungary"
-  employer: ""
   email: "teng.zhang@stu.xjtu.edu.cn"
 
   # Academic profiles (fill only what you use)
-  arxiv: ""
-  googlescholar: ""
-  orcid: ""
-  researchgate: ""
-  semantic: ""
 
-  # Code
-  github: "zhangteng2000"
 
 # Site Settings
 breadcrumbs: false
