@@ -14,9 +14,23 @@ I am a **Ph.D. student** in Mathematics at the  [School of Mathematics and Stati
 My research interests lie in **functional analysis**, **operator theory**,  and **geometry of polynomials**. More specifically, I study  *transformations on operator algebras*,  *function algebras*, and *quantum structures*,  with a focus on *preserver problems*,  *local and nonlinear transformations*,  *matrix inequalities* and *value distribution problems of polynomials*.
 
 
-You can find my CV here:  
-[T. Zhang's CV](../assets/ZT_CV.pdf)
-
 📧 Email: [teng.zhang@stu.xjtu.edu.cn](mailto:teng.zhang@stu.xjtu.edu.cn)
+
+
+## Education
+
+- **Ph.D. in Mathematics**,  
+  Xi'an Jiaotong University, Xi'an, China, *09/2021–Present*  
+  School of Mathematics and Statistics  
+  Advisor: Minghua Lin
+
+- **Ph.D. in Mathematics**,  
+  University of Szeged, Szeged, Hungary, *12/2025–12/2026*  
+  Department of Analysis, Bolyai Institute
+  Advisor: Lajos Molnár
+
+- **B.S. in Mathematics**,  
+  Taiyuan University of Technology, Taiyuan, China, *09/2017–07/2021*
+
 
 
