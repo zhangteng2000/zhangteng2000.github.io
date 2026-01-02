@@ -23,7 +23,7 @@ author_profile: true
   </li>
 
   <li value="5">
-    <a href="https://doi.org/10.1016/j.laa.2025.07.017/">
+    <a href="https://doi.org/10.1016/j.laa.2025.07.017">
       <em>
         A new proof of Lee's conjecture on the Frobenius norm via the matrix
         Cauchy–Schwarz inequality
@@ -33,7 +33,7 @@ author_profile: true
   </li>
 
   <li value="4">
-    <a href="https://doi.org/10.1016/j.jmaa.2024.128466/">
+    <a href="https://doi.org/10.1016/j.jmaa.2024.128466">
       <em>When D-companion matrix meets incomplete polynomials</em>
     </a>,
    J. Math. Anal. Appl. 539 (2024), 128466.
@@ -41,7 +41,7 @@ author_profile: true
 
   <li value="3">
     (with F. Nan)
-    <a href="https://doi.org/10.1080/03081087.2024.2376560/">
+    <a href="https://doi.org/10.1080/03081087.2024.2376560">
       <em>
         An improvement and a generalization of Rotfel’d type inequalities for
         sectorial matrices
@@ -53,7 +53,7 @@ author_profile: true
 
   <li value="2">
     (with M. Lin and J. Zhang)
-    <a href="https://doi.org/10.1016/j.laa.2022.09.012/">
+    <a href="https://doi.org/10.1016/j.laa.2022.09.012">
       <em>A lower bound for the spectral radius of complex matrices</em>
     </a>,
    Linear Algebra Appl. 656 (2023), 1–8.
@@ -61,7 +61,7 @@ author_profile: true
 
   <li value="1">
     (with M. Lin)
-    <a href="https://doi.org/10.1016/j.aml.2022.108194/">
+    <a href="https://doi.org/10.1016/j.aml.2022.108194">
       <em>
         On an upper bound for the eigenvalues of the solution of the continuous
         algebraic Riccati equation
