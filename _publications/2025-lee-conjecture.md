@@ -1,4 +1,5 @@
 ---
+tags: [Matrix Inequalities]
 title: "A new proof of Lee’s conjecture on the Frobenius norm via the matrix Cauchy–Schwarz inequality"
 collection: publications
 year: 2025
