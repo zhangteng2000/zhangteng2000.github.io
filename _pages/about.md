@@ -17,6 +17,7 @@ My research interests lie in functional analysis, operator theory,  and geometry
 📧 Email: [teng.zhang@stu.xjtu.edu.cn](mailto:teng.zhang@stu.xjtu.edu.cn)
 
 
+---
 ## Education
 
 - **Ph.D. Student in Mathematics**,  
@@ -32,6 +33,69 @@ My research interests lie in functional analysis, operator theory,  and geometry
 
 - **B.S. in Mathematics**,  
   Taiyuan University of Technology, Taiyuan, China, *09/2017–07/2021*
+
+---
+## Research Funding
+
+- **China Association for Science and Technology (CAST)  
+  Young Talent Support Program (Doctoral Candidates)**  
+  Supporting Society: China Society for Mathematics  
+  *(Total supported talents: 30)*  
+  *Support Period: Jan. 2025 – Dec. 2026*  
+  *Funding: CNY 40,000*  
+  **Role:** Host
+
+- **China Scholarship Council (CSC) Joint PhD Training Program**  
+  *Support Period: Dec. 2025 – Dec. 2026*  
+  *Funding: USD 14,400*  
+  **Role:** Host
+
+- **Fundamental Research Fund for the Central Universities Project**  
+  *Support Period: Jan. 2024 – Dec. 2025*  
+  *Funding: CNY 30,000*  
+  **Role:** Host
+
+
+---
+## Awards and Honors
+
+-**Grand Prize Scholarship for PhD Student**
+ *09/2024–09/2025*, Xi’an Jiaotong University
+
+- **Outstanding Graduate Student**,  
+  *09/2021–09/2025*, Xi’an Jiaotong University
+  
+- **National Scholarship for Graduate Students**,  
+  *09/2021–09/2022*, Xi’an Jiaotong University
+---
+
+
+## Invited Talks
+
+- **Joint Symposium by Five Schools of Mathematics**  
+  (Renmin University of China, Xi’an Jiaotong University,  
+  Beijing Institute of Technology, Shandong University,  
+  Beijing Normal University),  
+  *Dec. 2024*, Online
+
+- **2nd Central China Normal University Symposium on Frontiers in Mathematics for PhD Students**,  
+  *Sep. 2024*, Central China Normal University
+
+- **1st Peking University Symposium on Frontiers in Mathematics for PhD Students**,  
+  *Oct. 2023*, Peking University
+
+---
+
+## Teaching Assistant Experience
+
+- **Honors Mathematics Program:** Complex Analysis  
+  *Sep. 2023 – Jan. 2024*, Xi’an Jiaotong University
+- **Undergraduate Courses:** Linear Algebra and Analytic Geometry  
+  *Sep. 2021 – Jun. 2022*, Xi’an Jiaotong University
+
+
+
+
 
 ---
 
