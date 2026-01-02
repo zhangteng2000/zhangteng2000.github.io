@@ -1,5 +1,5 @@
 ---
-tags: [Matrix inequalities]
+tags: [Matrix Inequalities]
 title: "On an upper bound for the eigenvalues of the solution of the continuous algebraic Riccati equation"
 collection: publications
 year: 2022
