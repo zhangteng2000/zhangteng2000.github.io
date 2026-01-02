@@ -1,4 +1,5 @@
 ---
+tags: [Matrix Inequalities]
 title: "Proof of Audenaert–Kittaneh’s Conjecture"
 collection: publications
 year: 2025
