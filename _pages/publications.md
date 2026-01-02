@@ -11,8 +11,8 @@ author_profile: true
 {% for pub in site.publications reversed %}
 {% if pub.tags contains "Preserver" %}
   {% include archive-single.html type="list" %}
-{% end if %}
-{% end for %}
+  {% endif %}
+{% endfor %}
 
 ---
 
@@ -20,8 +20,8 @@ author_profile: true
 {% for pub in site.publications reversed %}
 {% if pub.tags contains "Geometry of Polynomials" %}
   {% include archive-single.html type="list" %}
-{% end if %}
-{% end for %}
+  {% endif %}
+{% endfor %}
 
 ---
 
@@ -29,5 +29,10 @@ author_profile: true
 {% for pub in site.publications reversed %}
 {% if pub.tags contains "Matrix Inequalities" %}
   {% include archive-single.html type="list" %}
-{% end if %}
-{% end for %}
+  {% endif %}
+{% endfor %}
+
+---
+
+
+
