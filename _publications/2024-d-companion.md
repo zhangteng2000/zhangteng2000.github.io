@@ -1,4 +1,5 @@
 ---
+tags: [Geometry of Polynomials]
 title: "When $D$-companion matrix meets incomplete polynomials"
 collection: publications
 year: 2024
