@@ -84,17 +84,45 @@ author_profile: true
 ## Preprints
 
 <ol>
-  <li value="13">
+  ## Preprints
+
+<ol>
+  <li value="21">
+    <em>
+      The equality case in &Vert;f(A)&Vert; &le; f(&Vert;A&Vert;) for
+      analytic matrix functions under strongly stable norms
+    </em>,
+    preprint.
+  </li>
+
+  <li value="20">
+    <em>
+      Sharp condition-number bounds for growth factors of Higham matrices in
+      Gaussian elimination
+    </em>,
+    preprint.
+  </li>
+
+  <li value="19">
+    (with L. Moln&aacute;r)
+    <em>
+      Kadison's theorem on linear order isomorphisms of
+      C<sup>*</sup>-algebras holds without the additivity assumption
+    </em>,
+    preprint.
+  </li>
+
+  <li value="18">
     (with Y. He and Q. Tang)
     <em>
       Optimal universal growth for integral means of normalized logarithmic
-      derivatives in the Carathéodory class
+      derivatives in the Carath&eacute;odory class
     </em>,
     preprint.
     <a href="https://arxiv.org/abs/2603.23734">arXiv:2603.23734</a>
   </li>
 
-  <li value="12">
+  <li value="17">
     (with Y. He and Q. Tang)
     <em>
       A Solution to a Problem of Rubel on Two-Parameter Normal Families of
@@ -104,7 +132,7 @@ author_profile: true
     <a href="https://arxiv.org/abs/2603.20883">arXiv:2603.20883</a>
   </li>
 
-  <li value="11">
+  <li value="16">
     <em>
       Plank theorems, Gaussian probabilistic estimates and Rump's 100 Euro
       conjecture
@@ -113,7 +141,7 @@ author_profile: true
     <a href="https://arxiv.org/abs/2603.07423">arXiv:2603.07423</a>
   </li>
 
-  <li value="10">
+  <li value="15">
     <em>
       On a conjecture of &lambda;-Aluthge transforms and Hilbert–Schmidt
       self-commutators
@@ -122,13 +150,13 @@ author_profile: true
     <a href="https://arxiv.org/abs/2603.04655">arXiv:2603.04655</a>
   </li>
 
-  <li value="9">
+  <li value="14">
     <em>Operator symmetric moduli and sharp triangle inequalities</em>,
     preprint.
     <a href="https://arxiv.org/abs/2603.01046">arXiv:2603.01046</a>
   </li>
 
-  <li value="8">
+  <li value="13">
     <em>
       Commutativity from the Equality of two Heron-type Means in
       C<sup>*</sup>-Algebras
@@ -137,31 +165,72 @@ author_profile: true
     <a href="https://arxiv.org/abs/2602.14123">arXiv:2602.14123</a>
   </li>
 
-  <li value="7">
+  <li value="12">
     <em>Trace arithmetic–&kappa;<sub>p</sub> inequality</em>,
     preprint.
     <a href="https://arxiv.org/abs/2602.11922">arXiv:2602.11922</a>
   </li>
 
-  <li value="6">
+  <li value="11">
     <em>Metric Properties: From S-Divergence to Quantum Jensen Divergence</em>,
     preprint.
     <a href="https://arxiv.org/abs/2602.08164">arXiv:2602.08164</a>
   </li>
 
-  <li value="5">
+  <li value="10">
     <em>
-      On three recent questions of Bourin and Lee on quadratic symmetric
-      modulus and Euler-operator identity
+      An operator triangle inequality for the quadratic symmetric modulus
     </em>,
     preprint.
     <a href="https://arxiv.org/abs/2602.01463">arXiv:2602.01463</a>
   </li>
 
-  <li value="4">
+  <li value="9">
+    <em>
+      Bourin-type inequalities for &tau;-measurable operators in fully
+      symmetric spaces
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2602.00358">arXiv:2602.00358</a>
+  </li>
+
+  <li value="8">
+    <em>
+      Angle duality and a gap principle for convex combinations of incomplete
+      polynomials on the unit circle
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2601.20748">arXiv:2601.20748</a>
+  </li>
+
+  <li value="7">
+    <em>
+      Johnson's determinantal identity for contiguous minors of Toeplitz
+      matrices, with an accretive extension
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2601.18977">arXiv:2601.18977</a>
+  </li>
+
+  <li value="6">
     <em>Intersections of Convex Hulls of Polynomial Shifts and Critical Points</em>,
     preprint.
     <a href="https://arxiv.org/abs/2601.16102">arXiv:2601.16102</a>
+  </li>
+
+  <li value="5">
+    <em>Schur--Horn type inequalities for hyperbolic polynomials</em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2601.10602">arXiv:2601.10602</a>
+  </li>
+
+  <li value="4">
+    <em>
+      Weak majorization inequalities for the cubic and quartic coefficients of
+      e<sup>(A+B)t</sup> versus e<sup>At</sup>e<sup>Bt</sup>
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2601.07286">arXiv:2601.07286</a>
   </li>
 
   <li value="3">
@@ -182,7 +251,9 @@ author_profile: true
 
   <li value="1">
     <em>
-      Full characterization of existence of Clarkson–McCarthy type inequalities
+      Clarkson--McCarthy type inequalities, part I:
+      &ell;<sub>p</sub>--&ell;<sub>p</sub> and
+      &ell;<sub>q</sub>--&ell;<sub>p</sub> Schatten p-estimates
     </em>,
     preprint.
     <a href="https://arxiv.org/abs/2410.21961">arXiv:2410.21961</a>
