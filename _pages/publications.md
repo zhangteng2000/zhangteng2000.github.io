@@ -210,9 +210,10 @@ author_profile: true
   </li>
 
   <li value="6">
-    <em>Intersections of Convex Hulls of Polynomial Shifts and Critical Points</em>,
+    <em>
+      When do the convex hulls of zeros and critical points coincide?
+    </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2601.16102">arXiv:2601.16102</a>
   </li>
 
   <li value="5">
