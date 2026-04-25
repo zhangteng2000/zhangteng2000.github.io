@@ -84,9 +84,6 @@ author_profile: true
 ## Preprints
 
 <ol>
-  ## Preprints
-
-<ol>
   <li value="21">
     <em>
       The equality case in &Vert;f(A)&Vert; &le; f(&Vert;A&Vert;) for
