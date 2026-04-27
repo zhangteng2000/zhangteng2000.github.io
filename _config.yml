@@ -16,13 +16,14 @@ author:
   bio: "We must know, and we will know!"
   location: "Szeged, Hungary"
 
-links:
+  links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/zhangteng2000"
+
     - label: "Google Scholar"
       icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=HKf3_tEAAAAJ&hl=zh-CN&oi=sra"
+      url: "https://scholar.google.com/citations?user=HKf3_tEAAAAJ&hl=zh-CN"
 
   # Academic profiles (fill only what you use)
 
