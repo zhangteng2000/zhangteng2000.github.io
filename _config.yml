@@ -6,10 +6,8 @@ description: "Academic homepage of Teng Zhang."
 url: "https://zhangteng2000.github.io"
 baseurl: ""
 
-# If you forked academicpages, you may set your own repository here (optional)
 repository: "zhangteng2000/zhangteng2000.github.io"
 
-# Author Profile (sidebar)
 author:
   name: "Teng Zhang (张腾)"
   avatar: "zt1.jpg"
@@ -22,7 +20,7 @@ author:
       url: "https://github.com/zhangteng2000"
 
     - label: "Google Scholar"
-      icon: "ai ai-google-scholar"
+      icon: "ai ai-google-scholar-square"
       url: "https://scholar.google.com/citations?user=HKf3_tEAAAAJ&hl=zh-CN"
 
   # Academic profiles (fill only what you use)
