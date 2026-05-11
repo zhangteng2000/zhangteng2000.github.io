@@ -145,7 +145,7 @@ author_profile: true
     J. Math. Anal. Appl. 539 (2024), 128466.
   </li>
 
-    <li>
+  <li>
     (with Y. He, Y. Li and Q. Tang)
     <em>
       The sharp bound for the third logarithmic coefficient of normalized
@@ -154,14 +154,14 @@ author_profile: true
     preprint.
     <br>
     <strong>Supplementary materials:</strong>
-    <a href="/files/6.119/certificate_final_strip_strict.csv">
-      certificate_final_strip_strict.csv
+    <a href="/files/third-log-coefficient/certificate_final_strip_strict.csv">
+      final strip certificate
     </a>,
-    <a href="/files/6.119/certificate_G_intervals_strict.csv">
-      certificate_G_intervals_strict.csv
+    <a href="/files/third-log-coefficient/certificate_G_intervals_strict.csv">
+      G-interval certificate
     </a>,
-    <a href="/files/6.119/verify_gamma3_standard_K_strict.py">
-      verify_gamma3_standard_K_strict.py
+    <a href="/files/third-log-coefficient/verify_gamma3_standard_K_strict.py">
+      verification code
     </a>.
   </li>
 
