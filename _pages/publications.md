@@ -154,15 +154,23 @@ author_profile: true
     preprint.
     <br>
     <strong>Supplementary materials:</strong>
-    <a href="/files/third-log-coefficient/certificate_final_strip_strict.csv">
-      final strip certificate
-    </a>,
-    <a href="/files/third-log-coefficient/certificate_G_intervals_strict.csv">
-      G-interval certificate
-    </a>,
-    <a href="/files/third-log-coefficient/verify_gamma3_standard_K_strict.py">
-      verification code
-    </a>.
+    <ul>
+      <li>
+        <a href="/files/6.119/verify_gamma3_standard_K_strict.py">
+          verify_gamma3_standard_K_strict.py
+        </a>
+      </li>
+      <li>
+        <a href="/files/6.119/certificate_G_intervals_strict.csv">
+          certificate_G_intervals_strict.csv
+        </a>
+      </li>
+      <li>
+        <a href="/files/6.119/certificate_final_strip_strict.csv">
+          certificate_final_strip_strict.csv
+        </a>
+      </li>
+    </ul>
   </li>
 
   <li>
