@@ -9,10 +9,31 @@ author_profile: true
 
 <ol>
   <li>
+    <em>
+      Sendov's conjecture holds for every degree
+      n &ge; 10<sup>200000</sup>
+    </em>,
+    preprint.
+    <a
+      href="/files/sendov_conjecture_large_n.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper proves Sendov's conjecture for every degree
+    n &ge; 10<sup>200000</sup>.
+  </li>
+
+  <li>
     (with J. Lei)
     <em>Proof of the Agler--McCarthy entropy conjecture</em>,
     preprint.
-    <a href="https://arxiv.org/abs/2605.03949">arXiv:2605.03949 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2605.03949">
+      arXiv:2605.03949 [math.CV]
+    </a>
     <br>
     <strong>Description:</strong>
     This paper establishes the first step in the two-step program proposed by
@@ -26,7 +47,9 @@ author_profile: true
       conjecture
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2604.24502">arXiv:2604.24502 [math.GR]</a>
+    <a href="https://arxiv.org/abs/2604.24502">
+      arXiv:2604.24502 [math.GR]
+    </a>
     <br>
     <strong>Description:</strong>
     This paper introduces the notion of colored Stallings graphs and constructs
@@ -40,7 +63,9 @@ author_profile: true
       conjecture
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2603.07423">arXiv:2603.07423 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2603.07423">
+      arXiv:2603.07423 [math.FA]
+    </a>
     <br>
     <strong>Description:</strong>
     This paper resolves a sharp-estimate problem posed by Rump more than three
@@ -63,9 +88,13 @@ author_profile: true
 
   <li>
     (with Q. Tang)
-    <em>Sharp Schoenberg type inequalities and the de Bruin--Sharma problem</em>,
+    <em>
+      Sharp Schoenberg type inequalities and the de Bruin--Sharma problem
+    </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2508.10341">arXiv:2508.10341 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2508.10341">
+      arXiv:2508.10341 [math.CV]
+    </a>
     <br>
     <strong>Description:</strong>
     This paper proves two conjectures posed by Terence Tao on fourth-order
@@ -85,7 +114,9 @@ author_profile: true
       symmetric spaces
     </em>,
     Acta Math. Sci. Ser. B (Engl. Ed.), accepted.
-    <a href="https://arxiv.org/abs/2602.00358">arXiv:2602.00358 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2602.00358">
+      arXiv:2602.00358 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -103,19 +134,27 @@ author_profile: true
       C<sup>*</sup>-algebras
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2602.14123">arXiv:2602.14123 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2602.14123">
+      arXiv:2602.14123 [math.FA]
+    </a>
   </li>
 
   <li>
     <em>Trace arithmetic--&kappa;<sub>p</sub> inequality</em>,
     preprint.
-    <a href="https://arxiv.org/abs/2602.11922">arXiv:2602.11922 [math.OA]</a>
+    <a href="https://arxiv.org/abs/2602.11922">
+      arXiv:2602.11922 [math.OA]
+    </a>
   </li>
 
   <li>
-    <em>Metric properties: from S-divergence to quantum Jensen divergence</em>,
+    <em>
+      Metric properties: from S-divergence to quantum Jensen divergence
+    </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2602.08164">arXiv:2602.08164 [math.OA]</a>
+    <a href="https://arxiv.org/abs/2602.08164">
+      arXiv:2602.08164 [math.OA]
+    </a>
   </li>
 </ol>
 
@@ -124,6 +163,21 @@ author_profile: true
 ## Complex Analysis
 
 <ol>
+  <li>
+    <em>
+      Sendov's conjecture holds for every degree
+      n &ge; 10<sup>200000</sup>
+    </em>,
+    preprint.
+    <a
+      href="/files/sendov_conjecture_large_n.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+
   <li>
     <a href="https://www.sciencedirect.com/science/article/pii/S0022247X26002210">
       <em>Distributions of zeros of a complex polynomial</em>
@@ -177,7 +231,9 @@ author_profile: true
     (with J. Lei)
     <em>Proof of the Agler--McCarthy entropy conjecture</em>,
     preprint.
-    <a href="https://arxiv.org/abs/2605.03949">arXiv:2605.03949 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2605.03949">
+      arXiv:2605.03949 [math.CV]
+    </a>
   </li>
 
   <li>
@@ -187,7 +243,9 @@ author_profile: true
       derivatives in the Carath&eacute;odory class
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2603.23734">arXiv:2603.23734 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2603.23734">
+      arXiv:2603.23734 [math.CV]
+    </a>
   </li>
 
   <li>
@@ -197,7 +255,9 @@ author_profile: true
       entire functions
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2603.20883">arXiv:2603.20883 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2603.20883">
+      arXiv:2603.20883 [math.CV]
+    </a>
   </li>
 
   <li>
@@ -206,21 +266,27 @@ author_profile: true
       polynomials on the unit circle
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2601.20748">arXiv:2601.20748 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2601.20748">
+      arXiv:2601.20748 [math.CV]
+    </a>
   </li>
 
   <li>
     <em>
       When do the convex hulls of zeros and critical points coincide?
     </em>,
-    preprint.
+    J. Math. Anal. Appl., accepted.
   </li>
 
   <li>
     (with Q. Tang)
-    <em>Sharp Schoenberg type inequalities and the de Bruin--Sharma problem</em>,
+    <em>
+      Sharp Schoenberg type inequalities and the de Bruin--Sharma problem
+    </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2508.10341">arXiv:2508.10341 [math.CV]</a>
+    <a href="https://arxiv.org/abs/2508.10341">
+      arXiv:2508.10341 [math.CV]
+    </a>
   </li>
 </ol>
 
@@ -230,9 +296,31 @@ author_profile: true
 
 <ol>
   <li>
+    <em>
+      The A-optimal design problem and the S-matrix conjecture
+    </em>,
+    preprint.
+    <a
+      href="/files/The%20A-optimal%20design%20problem%20and%20the%20S-matrix%20conjecture.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper proves the S-matrix conjecture formulated by Sloane and Harwit
+    by combining a variational trace inequality in odd dimensions with a sharp
+    range-constrained estimate for the Moore--Penrose inverse in even
+    dimensions.
+  </li>
+
+  <li>
     <em>Schur--Horn type inequalities for hyperbolic polynomials</em>,
     Indiana Univ. Math. J., accepted.
-    <a href="https://arxiv.org/abs/2601.10602">arXiv:2601.10602 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2601.10602">
+      arXiv:2601.10602 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -283,21 +371,25 @@ author_profile: true
   </li>
 
   <li>
-    <em>
-      The equality case in &Vert;f(A)&Vert; &le; f(&Vert;A&Vert;) for analytic
-      matrix functions under strongly stable norms
-    </em>,
-    preprint.
+    <a href="https://doi.org/10.1016/j.laa.2026.07.011">
+      <em>
+        The equality case in &Vert;f(A)&Vert; &le; f(&Vert;A&Vert;) for analytic
+        matrix functions under strongly stable norms
+      </em>
+    </a>,
+    Linear Algebra Appl. 750 (2026), 154--162.
   </li>
 
-<li>
-  <em>
-    Sharp condition-number bounds for growth factors of Higham matrices in
-    Gaussian elimination
-  </em>,
-  preprint.
-  <a href="https://arxiv.org/abs/2604.23024">arXiv:2604.23024 [math.NA]</a>
-</li>
+  <li>
+    <em>
+      Sharp condition-number bounds for growth factors of Higham matrices in
+      Gaussian elimination
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2604.23024">
+      arXiv:2604.23024 [math.NA]
+    </a>
+  </li>
 
   <li>
     <em>
@@ -305,7 +397,9 @@ author_profile: true
       conjecture
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2603.07423">arXiv:2603.07423 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2603.07423">
+      arXiv:2603.07423 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -313,14 +407,20 @@ author_profile: true
       On a conjecture of &lambda;-Aluthge transforms and Hilbert--Schmidt
       self-commutators
     </em>,
-    preprint.
-    <a href="https://arxiv.org/abs/2603.04655">arXiv:2603.04655 [math.FA]</a>
+    Proc. Amer. Math. Soc., accepted.
+    <a href="https://arxiv.org/abs/2603.04655">
+      arXiv:2603.04655 [math.FA]
+    </a>
   </li>
 
   <li>
-    <em>Operator symmetric moduli and sharp triangle inequalities</em>,
-    preprint.
-    <a href="https://arxiv.org/abs/2603.01046">arXiv:2603.01046 [math.FA]</a>
+    <em>
+      Operator symmetric moduli and sharp triangle inequalities
+    </em>,
+    J. Lond. Math. Soc., accepted.
+    <a href="https://arxiv.org/abs/2603.01046">
+      arXiv:2603.01046 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -328,16 +428,22 @@ author_profile: true
       An operator triangle inequality for the quadratic symmetric modulus
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2602.01463">arXiv:2602.01463 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2602.01463">
+      arXiv:2602.01463 [math.FA]
+    </a>
   </li>
 
   <li>
-    <em>
-      Johnson's determinantal identity for contiguous minors of Toeplitz
-      matrices, with an accretive extension
-    </em>,
-    preprint.
-    <a href="https://arxiv.org/abs/2601.18977">arXiv:2601.18977 [math.FA]</a>
+    <a href="https://doi.org/10.1016/j.jalgebra.2026.06.039">
+      <em>
+        Johnson's determinantal identity for contiguous minors of Toeplitz
+        matrices, with an accretive extension
+      </em>
+    </a>,
+    J. Algebra 711 (2027), 14--25.
+    <a href="https://arxiv.org/abs/2601.18977">
+      arXiv:2601.18977 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -346,7 +452,9 @@ author_profile: true
       e<sup>(A+B)t</sup> versus e<sup>At</sup>e<sup>Bt</sup>
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2601.07286">arXiv:2601.07286 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2601.07286">
+      arXiv:2601.07286 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -355,7 +463,9 @@ author_profile: true
       polar factors
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2507.14940">arXiv:2507.14940 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2507.14940">
+      arXiv:2507.14940 [math.FA]
+    </a>
   </li>
 
   <li>
@@ -365,7 +475,9 @@ author_profile: true
       &ell;<sub>q</sub>--&ell;<sub>p</sub> Schatten p-estimates
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2410.21961">arXiv:2410.21961 [math.FA]</a>
+    <a href="https://arxiv.org/abs/2410.21961">
+      arXiv:2410.21961 [math.FA]
+    </a>
   </li>
 </ol>
 
@@ -381,7 +493,9 @@ author_profile: true
       conjecture
     </em>,
     preprint.
-    <a href="https://arxiv.org/abs/2604.24502">arXiv:2604.24502 [math.GR]</a>
+    <a href="https://arxiv.org/abs/2604.24502">
+      arXiv:2604.24502 [math.GR]
+    </a>
   </li>
 </ol>
 
