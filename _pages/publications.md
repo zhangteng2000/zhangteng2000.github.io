@@ -10,6 +10,27 @@ author_profile: true
 <ol>
   <li>
     <em>
+      Baernstein's Quasi-Norm Monotonicity Conjecture for Polynomials with
+      Unimodular Zeros
+    </em>,
+    preprint.
+    <a
+      href="/files/v1_Baernstein_quasinorm_conjecture.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper settles Baernstein's quasi-norm monotonicity conjecture for
+    polynomials whose zeros all lie on the unit circle. It also yields sharp
+    consequences for coefficient inequalities, O'Hara--Rodriguez inequalities,
+    Erdős--Szekeres products, power sums, and entropy.
+  </li>
+
+  <li>
+    <em>
       Sendov's conjecture holds for every degree
       n &ge; 10<sup>200000</sup>
     </em>,
@@ -163,6 +184,21 @@ author_profile: true
 ## Complex Analysis
 
 <ol>
+  <li>
+    <em>
+      Baernstein's Quasi-Norm Monotonicity Conjecture for Polynomials with
+      Unimodular Zeros
+    </em>,
+    preprint.
+    <a
+      href="/files/baernstein_quasi_norm_monotonicity.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+
   <li>
     <em>
       Sendov's conjecture holds for every degree
