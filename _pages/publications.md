@@ -184,6 +184,20 @@ author_profile: true
 ## Complex Analysis
 
 <ol>
+   <li>
+    <em>
+      Weighted weak majorization and sharp Schoenberg-type inequalities
+    </em>,
+    preprint.
+    <a
+      href="/files/weighted_weak_majorization.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+  
   <li>
     <em>
       Baernstein's Quasi-Norm Monotonicity Conjecture for Polynomials with
