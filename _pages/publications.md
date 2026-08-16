@@ -346,6 +346,20 @@ author_profile: true
 
 <ol>
   <li>
+  <em>
+    A sharp lower bound for permanents of nearly decomposable doubly stochastic matrices
+  </em>,
+  preprint.
+  <a
+    href="/files/A_sharp_lower_bound_for_permanents_final.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    PDF
+  </a>
+</li>
+  
+  <li>
     <em>
       The A-optimal design problem and the S-matrix conjecture
     </em>,
