@@ -198,22 +198,6 @@ author_profile: true
 
 <ol>
   <li>
-    (with Y. He, Q. Tang and Z. Xu)
-    <em>
-      The nonseparable case of Kadison's problem on orthonormal bases of
-      unitaries for type II<sub>1</sub> factors
-    </em>,
-    preprint.
-    <a
-      href="/files/Kadison_problem_13_nonseparable_case.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      PDF
-    </a>
-  </li>
-
-  <li>
     <em>
       On the embedding rigidity problem for uniformly locally finite coarse
       spaces
@@ -247,6 +231,22 @@ author_profile: true
     </a>
   </li>
 
+  <li>
+    (with Y. He, Q. Tang and Z. Xu)
+    <em>
+      The nonseparable case of Kadison's problem on orthonormal bases of
+      unitaries for type II<sub>1</sub> factors
+    </em>,
+    preprint.
+    <a
+      href="/files/Kadison_problem_13_nonseparable_case.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+  
   <li>
     <em>
       Bourin-type inequalities for &tau;-measurable operators in fully
