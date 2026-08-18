@@ -6,7 +6,6 @@ author_profile: true
 ---
 
 ## Representative Papers
-
 <ol>
   <li>
     <em>
@@ -94,6 +93,75 @@ author_profile: true
     classical Perron--Frobenius theory.
   </li>
 
+ <li>
+    <em>
+      Isomorphism rigidity of uniform Roe algebras over arbitrary uniformly
+      locally finite coarse spaces
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2607.15096">
+      arXiv:2607.15096 [math.OA]
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper completely resolves the isomorphism rigidity problem for uniform
+    Roe algebras over arbitrary uniformly locally finite coarse spaces.
+  </li>
+
+  <li>
+    <em>
+      On the embedding rigidity problem for uniformly locally finite coarse
+      spaces
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2607.16949">
+      arXiv:2607.16949 [math.OA]
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper gives a negative answer to the embedding rigidity problem in
+    general and proves injective coarse-embedding rigidity under the
+    compact-ghost-projection hypothesis.
+  </li>
+  
+  <li>
+    (with Y. He and Q. Tang)
+    <em>
+      The separable case of Kadison's problem on orthonormal bases of unitaries
+      for type II<sub>1</sub> factors
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2605.15006">
+      arXiv:2605.15006 [math.OA]
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper affirms the separable case of Kadison's problem by proving that
+    every separable diffuse finite von Neumann algebra with a normal faithful
+    trace admits an orthonormal basis consisting of self-adjoint unitaries.
+  </li>
+
+  <li>
+    (with Y. He, Q. Tang and Z. Xu)
+    <em>
+      The nonseparable case of Kadison's problem on orthonormal bases of
+      unitaries for type II<sub>1</sub> factors
+    </em>,
+    preprint.
+    <a
+      href="/files/Kadison_problem_13_nonseparable_case.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+    <br>
+    <strong>Description:</strong>
+    This paper proves the complementary nonseparable case of Kadison's problem
+    and, together with the separable case, resolves the problem in full. The
+    orthonormal basis may be chosen to consist of self-adjoint unitaries.
+  </li>
+
   <li>
     (with L. Moln&aacute;r)
     <em>
@@ -129,6 +197,56 @@ author_profile: true
 ## Operator Algebras
 
 <ol>
+  <li>
+    (with Y. He, Q. Tang and Z. Xu)
+    <em>
+      The nonseparable case of Kadison's problem on orthonormal bases of
+      unitaries for type II<sub>1</sub> factors
+    </em>,
+    preprint.
+    <a
+      href="/files/Kadison_problem_13_nonseparable_case.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+
+  <li>
+    <em>
+      On the embedding rigidity problem for uniformly locally finite coarse
+      spaces
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2607.16949">
+      arXiv:2607.16949 [math.OA]
+    </a>
+  </li>
+
+  <li>
+    <em>
+      Isomorphism rigidity of uniform Roe algebras over arbitrary uniformly
+      locally finite coarse spaces
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2607.15096">
+      arXiv:2607.15096 [math.OA]
+    </a>
+  </li>
+
+  <li>
+    (with Y. He and Q. Tang)
+    <em>
+      The separable case of Kadison's problem on orthonormal bases of unitaries
+      for type II<sub>1</sub> factors
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2605.15006">
+      arXiv:2605.15006 [math.OA]
+    </a>
+  </li>
+
   <li>
     <em>
       Bourin-type inequalities for &tau;-measurable operators in fully
@@ -184,6 +302,36 @@ author_profile: true
 ## Complex Analysis
 
 <ol>
+  <li>
+    <em>
+      Sharp Reciprocal-Moment Inequalities for Critical Points of Polynomials
+      with Collinear Zeros
+    </em>,
+    preprint.
+    <a
+      href="/files/Sharp_Reciprocal_Moment_Inequalities_Collinear_Zeros.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+
+  <li>
+    <em>
+      The Quadratic Tang--Zhang Refinement Holds for Every Degree
+      n &ge; 10<sup>200000</sup>
+    </em>,
+    preprint.
+    <a
+      href="/files/explicit_large_n_quadratic_tang_zhang.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
+
    <li>
     <em>
       Weighted weak majorization and sharp Schoenberg-type inequalities
@@ -205,7 +353,7 @@ author_profile: true
     </em>,
     preprint.
     <a
-      href="/files/baernstein_quasi_norm_monotonicity.pdf"
+      href="/files/v1_Baernstein_quasinorm_conjecture.pdf"
       target="_blank"
       rel="noopener"
     >
@@ -541,6 +689,25 @@ author_profile: true
     preprint.
     <a href="https://arxiv.org/abs/2410.21961">
       arXiv:2410.21961 [math.FA]
+    </a>
+  </li>
+  <li>
+    <em>
+      From Clarkson--McCarthy inequality to Ball--Carlen--Lieb inequality
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2410.12244">
+      arXiv:2410.12244 [math.FA]
+    </a>
+  </li>
+
+  <li>
+    <em>
+      Strengthening of Clarkson--McCarthy inequalities with several operators
+    </em>,
+    preprint.
+    <a href="https://arxiv.org/abs/2408.07730">
+      arXiv:2408.07730 [math.FA]
     </a>
   </li>
 </ol>
