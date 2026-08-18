@@ -168,7 +168,12 @@ author_profile: true
       Kadison's theorem on linear order isomorphisms of
       C<sup>*</sup>-algebras holds without the additivity assumption
     </em>,
-    preprint.
+    preprint. 
+    <a
+      href="/files/Kadison_vegleges_1.pdf"
+      target="_blank"
+      rel="noopener"
+    >
     <br>
     <strong>Description:</strong>
     This paper removes the additivity assumption from Kadison's theorem on
@@ -268,9 +273,10 @@ author_profile: true
   </li>
 
   <li>
+    (with L. Moln&aacute;r)
     <em>
-      Commutativity from equality of two Heron-type means in
-      C<sup>*</sup>-algebras
+      On interrelations among different versions of a Heron type mean and
+      commutativity in C<sup>*</sup>-algebras
     </em>,
     preprint.
     <a href="https://arxiv.org/abs/2602.14123">
