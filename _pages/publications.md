@@ -93,7 +93,7 @@ author_profile: true
     classical Perron--Frobenius theory.
   </li>
 
- <li>
+  <li>
     <em>
       Isomorphism rigidity of uniform Roe algebras over arbitrary uniformly
       locally finite coarse spaces
@@ -168,12 +168,14 @@ author_profile: true
       Kadison's theorem on linear order isomorphisms of
       C<sup>*</sup>-algebras holds without the additivity assumption
     </em>,
-    preprint. 
+    preprint.
     <a
       href="/files/Kadison_vegleges_1.pdf"
       target="_blank"
       rel="noopener"
     >
+      PDF
+    </a>
     <br>
     <strong>Description:</strong>
     This paper removes the additivity assumption from Kadison's theorem on
@@ -270,6 +272,13 @@ author_profile: true
       C<sup>*</sup>-algebras holds without the additivity assumption
     </em>,
     preprint.
+    <a
+      href="/files/Kadison_vegleges_1.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
   </li>
 
   <li>
@@ -338,7 +347,7 @@ author_profile: true
     </a>
   </li>
 
-   <li>
+  <li>
     <em>
       Weighted weak majorization and sharp Schoenberg-type inequalities
     </em>,
@@ -500,18 +509,18 @@ author_profile: true
 
 <ol>
   <li>
-  <em>
-    A sharp lower bound for permanents of nearly decomposable doubly stochastic matrices
-  </em>,
-  preprint.
-  <a
-    href="/files/A_sharp_lower_bound_for_permanents_final.pdf"
-    target="_blank"
-    rel="noopener"
-  >
-    PDF
-  </a>
-</li>
+    <em>
+      A sharp lower bound for permanents of nearly decomposable doubly stochastic matrices
+    </em>,
+    preprint.
+    <a
+      href="/files/A_sharp_lower_bound_for_permanents_final.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      PDF
+    </a>
+  </li>
   
   <li>
     <em>
@@ -697,6 +706,7 @@ author_profile: true
       arXiv:2410.21961 [math.FA]
     </a>
   </li>
+
   <li>
     <em>
       From Clarkson--McCarthy inequality to Ball--Carlen--Lieb inequality
