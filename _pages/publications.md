@@ -319,36 +319,6 @@ author_profile: true
 <ol>
   <li>
     <em>
-      Sharp Reciprocal-Moment Inequalities for Critical Points of Polynomials
-      with Collinear Zeros
-    </em>,
-    preprint.
-    <a
-      href="/files/Sharp_Reciprocal_Moment_Inequalities_Collinear_Zeros.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      PDF
-    </a>
-  </li>
-
-  <li>
-    <em>
-      The Quadratic Tang--Zhang Refinement Holds for Every Degree
-      n &ge; 10<sup>200000</sup>
-    </em>,
-    preprint.
-    <a
-      href="/files/explicit_large_n_quadratic_tang_zhang.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      PDF
-    </a>
-  </li>
-
-  <li>
-    <em>
       Weighted weak majorization and sharp Schoenberg-type inequalities
     </em>,
     preprint.
