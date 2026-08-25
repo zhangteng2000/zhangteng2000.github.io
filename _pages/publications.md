@@ -318,6 +318,23 @@ author_profile: true
 
 <ol>
   <li>
+  (with Y. He)
+  <em>A counterexample to Nevanlinna's century-old half-plane problem</em>,
+  preprint.
+  <a
+    href="/files/nevanlinna_counterexample.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    PDF
+  </a>
+  <br>
+  <strong>Description:</strong>
+  This paper provides a counterexample to Nevanlinna's century-old
+  half-plane problem.
+  </li>
+  
+  <li>
     <em>
       Weighted weak majorization and sharp Schoenberg-type inequalities
     </em>,
