@@ -7,7 +7,7 @@ author_profile: true
 
 ## Research Notes
 
-- [A sharp lower bound for permanents](/files/A%20sharp%20lower%20bound%20for%20permanents.pdf)
+- [A sharp lower bound for permanents](/files/A_sharp_lower_bound_for_permanents.pdf)
 
 - [Baernstein Conjecture](/files/Baernstein%20Conjecture.pdf)
 
