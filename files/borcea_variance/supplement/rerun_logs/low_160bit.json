@@ -1,0 +1,77 @@
+{
+  "precision_bits": 160,
+  "blocks": 10,
+  "leaves": 12821,
+  "tests": {
+    "product": 318,
+    "product_radial": 566,
+    "center_coeff": 1105,
+    "variance_nonnegative": 122,
+    "moment_A": 2652,
+    "finite_radial": 707,
+    "product_root_stable": 345,
+    "center_positive": 1168,
+    "near_uniform": 10,
+    "critical_variance_negative": 145,
+    "product_stable": 4,
+    "direct": 2057,
+    "moment_B": 306,
+    "product_logcap": 1621,
+    "degree_bound": 65,
+    "direct_retained": 1539,
+    "center_ratio": 58,
+    "inverse_moment": 15,
+    "beta_negative": 18
+  },
+  "maximum_depth": 53,
+  "maximum_main_bound_integer": "1461500646728327186136662544680131596509538415198",
+  "degree_details": [
+    {
+      "n": 4,
+      "leaves": 532
+    },
+    {
+      "n": 5,
+      "leaves": 1103
+    },
+    {
+      "n": 6,
+      "leaves": 1594
+    },
+    {
+      "n": 7,
+      "leaves": 2540
+    },
+    {
+      "n": 8,
+      "leaves": 1753
+    },
+    {
+      "n": 9,
+      "leaves": 1420
+    },
+    {
+      "n": 10,
+      "leaves": 1164
+    },
+    {
+      "n": 11,
+      "leaves": 1002
+    },
+    {
+      "n": 12,
+      "leaves": 904
+    },
+    {
+      "n": 13,
+      "leaves": 809
+    }
+  ],
+  "status": "PASS",
+  "minimum_degree": 4,
+  "maximum_degree": 13,
+  "scale": "1461501637330902918203684832716283019655932542976",
+  "minimum_main_margin_numerator": "990602575732067022288036151423146394127778",
+  "sha256": "4334dd70fe5317040124115239f92ecc4e220cbf6c3576407396c3ea9df19f8b",
+  "elapsed_seconds_reporting_only": 24.999588382000184
+}

@@ -1,0 +1,1110 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype,booktabs,array,longtable}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black,breaklinks=true]{hyperref}
+\hypersetup{pdftitle={Borcea's 2-variance conjecture},pdfauthor={Teng Zhang},
+ pdfsubject={A computer-assisted proof in polynomial geometry},
+ pdfkeywords={polynomial zeros, critical points, variance, computer-assisted proof}}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textup{(\roman*)},leftmargin=*,itemsep=2pt,topsep=4pt}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conjecture}[thm]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Rea}{\operatorname{Re}}
+\newcommand{\Ima}{\operatorname{Im}}
+\newcommand{\half}[2]{#1^{#2/2}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+\newcommand{\arxiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand{\step}[1]{\par\smallskip\noindent\emph{#1}\enspace}
+\newcommand{\file}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\pos}[1]{(#1)_{+}}
+\allowdisplaybreaks[1]
+\emergencystretch=1.5em
+\title[Borcea's 2-variance conjecture]{Borcea's $2$-variance conjecture}
+\author{Teng Zhang}
+\address{School of Mathematics and Statistics, Xi'an Jiaotong University, Xi'an, China}
+\date{}
+\subjclass[2020]{Primary 30C15; Secondary 26D15, 65G30}
+\keywords{Zeros of polynomials, critical points, Borcea's variance conjecture, Schoenberg's inequality, computer-assisted proof}
+\begin{document}
+\begin{abstract}
+We prove that every zero of a complex polynomial of degree at least two lies within one standard deviation of a critical point, where the standard deviation is taken over the zeros, counted with multiplicity. The constant is optimal. This establishes Borcea's variance conjecture for every exponent $p\ge2$.
+\end{abstract}
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+The relation between the zeros of a polynomial and those of its derivative is a central subject in the geometry of polynomials. The Gauss--Lucas theorem places the critical points in the convex hull of the zeros, but does not ensure that each zero is close to a critical point. Sendov's conjecture addresses this second question: if the zeros lie in the closed unit disk, then every zero has a critical point within distance one. Proposed in 1958 and publicized in Hayman's problem collection \cite{Hay67}, it led to a substantial literature; see Marden \cite{Mar66} and Rahman and Schmeisser \cite{RS02} for the classical background. Among the later developments, Brown and Xiang \cite{BX99} treated degrees through eight, D\'egot \cite{Deg14} obtained a large-degree result with the distinguished zero fixed, and Tao \cite{Tao22} proved the conjecture for all sufficiently large degrees. Mazur \cite{Maz26} subsequently presented a computer-assisted proof. Tao's exposition \cite{Tao26} isolates several identities used in that approach.
+
+The radius of a disk containing the zeros is a coarse measure of their spread. Borcea proposed replacing it by a centered mean distance. For a polynomial $P$ of degree $n\ge2$, write its zeros as $z_1,\ldots,z_n$, always counted with multiplicity, and put
+\begin{equation}\label{eq:sigma}
+ \sigma_p(P)=\inf_{c\in\C}
+ \left(\frac1n\sum_{j=1}^n|z_j-c|^p\right)^{1/p}
+ \quad(1\le p<\infty),
+ \qquad
+ \sigma_\infty(P)=\inf_{c\in\C}\max_j|z_j-c|.
+\end{equation}
+Let $Z(P)$ denote the set of zeros of $P$, and define the directed distance
+\[
+ d(P)=\max_{a\in Z(P)}\min_{\zeta\in Z(P')}|a-\zeta|.
+\]
+The formulation below is that of Khavinson, Pereira, Putinar, Saff, and Shimorin \cite[Definition~2.1 and Conjecture~1]{KPPSS11}.
+
+\begin{conjecture}\label{conj:borcea}
+For every complex polynomial $P$ of degree at least two and every $p\in[1,\infty]$, one has $d(P)\le\sigma_p(P)$.
+\end{conjecture}
+
+The conjecture for $p=\infty$ is equivalent, by an affine change of variable, to Sendov's conjecture. The case $p=2$ asks for the stronger bound determined by the variance. Indeed, if $c_P=n^{-1}\sum_jz_j$, then
+\begin{equation}\label{eq:variance}
+ \sigma_2(P)^2=\frac1n\sum_{j=1}^n|z_j-c_P|^2.
+\end{equation}
+Borcea's study of logarithmic potentials \cite[\S3.2, Theorems~4 and~5]{Bor07} established variance bounds in the reverse directed-distance problem, from equilibrium points to the charges. The distinction between the two directions is essential. Khavinson, Pereira, Putinar, Saff, and Shimorin \cite[Theorem~3.2]{KPPSS11} proved Conjecture~\ref{conj:borcea} for $p=2$ when there are at most three distinct zeros, and developed matrix and geometric approaches to the general question. Their account also records Borcea's unpublished formulations of the problem.
+
+We prove the following theorem.
+
+\begin{thm}\label{thm:main}
+Let $P$ be a complex polynomial of degree $n\ge2$. For every $a\in Z(P)$ there exists $\zeta\in Z(P')$ such that
+\begin{equation}\label{eq:main}
+ |a-\zeta|\le\sigma_2(P).
+\end{equation}
+The constant $1$ in \eqref{eq:main} is optimal.
+\end{thm}
+
+\begin{cor}\label{cor:p}
+Conjecture~\ref{conj:borcea} holds for every $p\in[2,\infty]$.
+\end{cor}
+\begin{proof}
+For each fixed center $c$, the normalized power means are nondecreasing in $p$. Taking infima in \eqref{eq:sigma} gives $\sigma_p(P)\ge\sigma_2(P)$ for $p\ge2$. Apply Theorem~\ref{thm:main}.
+\end{proof}
+
+The proof is computer-assisted. Degrees $n\ge100001$ are treated analytically. For $4\le n\le100000$, two finite certificates give an exact covering of a three-dimensional parameter region and exclude every box by rational inequalities and outward-rounded integer estimates. The supplementary files include the certificates and their checkers; the public code archive is cited in \cite{Zha26S}. No numerical root-finding enters the proof, and no assertion about the existence of a polynomial is inferred from a sampled point of parameter space. The computation verifies the finite inequalities; the mathematical reductions and the passage to all sufficiently large degrees are proved in the text.
+
+Two ingredients connect the argument to earlier work. The critical-point second-moment inequality conjectured by Schoenberg \cite{Sch86} and proved by Pereira \cite[\S3, pp.~341--343]{Per03} and independently by Malamud \cite{Mal05} supplies the variance control. The antiderivative identity emphasized by Tao \cite[Lemma~6, equation~(9)]{Tao26}, and the centered interpolation used by Zhang \cite[Lemmas~3.1 and~5.1]{Zha26}, convert reciprocal critical-point data into integral inequalities. The latter work concerns the quadratic Tang--Zhang inequality, arising from the program of Tang and Zhang \cite{TZ25}. Its disk hypotheses cannot simply be replaced by a second-moment constraint. Here the required replacement is a weighted covariance inequality in reciprocal coordinates. The small degrees additionally require a strengthened product estimate and the sign of the quadratic centered coefficient.
+
+Theorem~\ref{thm:main} does not assert the stronger bound $\sigma_2(P)^2\sum_{P'(\zeta)=0}|a-\zeta|^{-2}\ge n-1$ or classify all equality cases. The contradiction argument requires \emph{each} reciprocal distance to be less than one.
+
+Section~\ref{sec:reduction} gives the normalization and moment identities. Sections~\ref{sec:integral} and~\ref{sec:large} establish the integral estimates and the large-degree result. Sections~\ref{sec:products} and~\ref{sec:coefficients} treat the small-degree estimates and the limiting region. Section~\ref{sec:finite} completes the proof. The interval bounds and exact arithmetic are specified in Appendices~\ref{app:boxes} and~\ref{app:arithmetic}.
+
+\medskip
+\noindent\textbf{Acknowledgments and AI tools disclosure. } The author is grateful to Terence Tao for very helpful discussions in the comments on his \href{https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/}{blog post}.
+
+Teng Zhang is supported by the China Scholarship Council, the Young Elite Scientists Sponsorship Program for PhD Students of the China Association for Science and Technology, and the Fundamental Research Funds for the Central Universities at Xi'an Jiaotong University (Grant No.~xzy022024045).
+
+ChatGPT was used for English-language editing, proofreading, grammatical corrections, the preparation of illustrative figures and as an exploratory tool for discussing possible approaches to selected parts of this paper. The mathematical arguments and proofs in the original manuscript were independently developed, checked, and written by the author.
+
+\section{Normalization and reciprocal moments}\label{sec:reduction}
+
+We first record the two known results used below. The first is the centered form of Schoenberg's inequality. The indicated theorem number and page refer explicitly to the arXiv version of Malamud's paper; Pereira's independent proof appears at the location given in the introduction.
+
+\begin{lem}[{\cite[Theorem~4.10, p.~21, arXiv version]{Mal05}}]\label{lem:schoenberg}
+Let $Q$ be a polynomial of degree $d\ge2$ with zeros $\lambda_1,\ldots,\lambda_d$ and critical points $\eta_1,\ldots,\eta_{d-1}$, counted with multiplicity. If $\sum_{j=1}^d\lambda_j=0$, then
+\begin{equation}\label{eq:schoenberg}
+ d\sum_{j=1}^{d-1}|\eta_j|^2
+ \le(d-2)\sum_{j=1}^d|\lambda_j|^2.
+\end{equation}
+Equality holds if and only if the $\lambda_j$ are collinear.
+\end{lem}
+
+The following result takes care of degrees two and three, regardless of multiplicities.
+
+\begin{lem}[{\cite[Theorem~3.2, p.~7, author version]{KPPSS11}}]\label{lem:three}
+If a complex polynomial $P$ of degree at least two has at most three distinct zeros, then $d(P)\le\sigma_2(P)$.
+\end{lem}
+
+Suppose henceforth that \eqref{eq:main} fails at a zero of a polynomial of degree $n=m+1\ge4$. The variance is positive, and the distinguished zero is simple. Translation, dilation, and rotation give
+\begin{equation}\label{eq:normalization}
+ P(z)=(z-a)\prod_{j=1}^m(z-z_j),\qquad
+ a\ge0,\qquad a+\sum_{j=1}^m z_j=0,\qquad
+ a^2+\sum_{j=1}^m|z_j|^2=m+1.
+\end{equation}
+Coefficient comparison and \eqref{eq:schoenberg}, with $d=m+1$ and $Q=P$, give
+\begin{equation}\label{eq:critical-moments}
+ \frac1m\sum_{j=1}^m\zeta_j=0,\qquad
+ V_*:=\frac1m\sum_{j=1}^m|\zeta_j|^2\le V_m:=1-\frac1m,
+\end{equation}
+where $\zeta_1,\ldots,\zeta_m$ are the critical points. Thus $a=0$ cannot be a counterexample. Cauchy--Schwarz in \eqref{eq:normalization} also gives $a^2\le m$.
+
+Throughout Sections~\ref{sec:reduction}--\ref{sec:coefficients}, a \emph{normalized counterexample} means the data in \eqref{eq:normalization} with $a>0$ and $|a-\zeta_j|>1$ for all $j$. Set
+\begin{equation}\label{eq:reciprocal}
+ q_j=\frac1{a-\zeta_j},\quad
+ \mu=\E q=x+iy,\quad r=|\mu|,\quad
+ s=\E|q|^2,\quad v=s-r^2,\quad Q_0=\prod_{j=1}^m|q_j|^2.
+\end{equation}
+Here and below $\E$ denotes the average over $j=1,\ldots,m$; for example, $\E|q|^2=m^{-1}\sum_j|q_j|^2$. For a real vector $Y=(Y_j)_{j=1}^m$, we write $\Var(Y)=\E(Y-\E Y)^2$. In particular $|q_j|<1$, $0<s<1$, $0\le r<1$, and $v\ge0$. The symbol $V$ will always denote a specified upper bound for $V_*$, with $0\le V\le1$.
+
+\subsection{Covariance inequalities}
+
+For $0\le t\le1$, define
+\begin{equation}\label{eq:beta}
+ \rho=2ax-a^2s,\qquad
+ \beta(t)=\E|1-atq|^2
+ =1-\rho t-a^2s\,t(1-t).
+\end{equation}
+The next lemma replaces the use of a containing disk.
+
+\begin{lem}\label{lem:moments}
+Every normalized counterexample satisfies
+\begin{align}
+ \rho&\ge r^2+(1-V)(1-s),&
+ |\mu-a|^2&\le(a^2+V-1)(1-s),\label{eq:moment-a}\\
+ |1-a\mu|^2&\le Vv,&
+ s(a^2+V)&\ge1,\label{eq:moment-b}\\
+ \beta(1)&\le(a^2+V)v.&&\label{eq:moment-end}
+\end{align}
+\end{lem}
+\begin{proof}
+Since $q=(a-\overline\zeta)|q|^2$ and $\E\zeta=0$,
+$\mu-as=\E[\overline\zeta(1-|q|^2)]$.
+The weights $1-|q_j|^2$ are positive. Weighted Cauchy--Schwarz therefore gives
+\[
+ |\mu-as|^2
+ \le\E\bigl[|\zeta|^2(1-|q|^2)\bigr](1-s)
+ \le\bigl(V-\beta(1)\bigr)(1-s),
+\]
+where $\zeta q=aq-1$ was used in the last step. Since $|\mu-as|^2=r^2-s\rho$ and $\beta(1)=1-\rho$, this proves the first inequality in \eqref{eq:moment-a}. Expanding $|\mu-a|^2$ gives the equivalent second inequality.
+
+Next, $a\mu-1=\E[\zeta(q-\mu)]$ proves the first inequality in \eqref{eq:moment-b}. Applying Cauchy--Schwarz to $q$ and $a-\zeta$ gives $1\le s\E|a-\zeta|^2\le s(a^2+V)$, proving the second. Finally, $\beta(1)=|1-a\mu|^2+a^2v$ gives \eqref{eq:moment-end}.
+\end{proof}
+
+\subsection{The antiderivative identities}
+
+Put
+\[
+ F(t)=\prod_{j=1}^m(1-atq_j),\qquad
+ J=\prod_{j=1}^m z_jq_j,\qquad h=a\mu,\qquad D(t)=1-ht.
+\]
+The identities below have no disk hypothesis. We give their short derivation to make that point explicit.
+
+\begin{lem}\label{lem:identities}
+For every normalized counterexample,
+\begin{align}
+ (-1)^mJ&=(m+1)\int_0^1F(t)\dd t,\label{eq:origin}\\
+ 1&=F(1)+mh\int_0^1F(t)\dd t+\mathcal R,\label{eq:differential}\\
+ \mathcal R&=a^2\int_0^1t\sum_{j=1}^m q_j^2
+                  \prod_{k\ne j}(1-atq_k)\dd t.\label{eq:remainder}
+\end{align}
+The centered identity is
+\begin{equation}\label{eq:center-identity}
+ 1=(-1)^m hJ+(1-h)^{m+1}
+ -(m+1)h\int_0^1\bigl(F(t)-D(t)^m\bigr)\dd t.
+\end{equation}
+\end{lem}
+\begin{proof}
+The factorization $P'(z)=(m+1)\prod_j(z-\zeta_j)$ gives
+$P'(a(1-t))=(m+1)F(t)/\prod_jq_j$. Integrating from $0$ to $1$ and using $P(a)=0$ and $P(0)=(-1)^{m+1}a\prod_jz_j$ proves \eqref{eq:origin}.
+
+Differentiating the product $F$ gives
+$F'(t)+mhF(t)=-a^2t\sum_jq_j^2\prod_{k\ne j}(1-atq_k)$.
+Integration proves \eqref{eq:differential} and \eqref{eq:remainder}. The polynomial identity
+$(m+1)h\int_0^1D(t)^m\dd t=1-(1-h)^{m+1}$,
+valid also when $h=0$, together with \eqref{eq:origin}, proves \eqref{eq:center-identity}.
+\end{proof}
+
+We shall use both a root product bound and a critical-point product bound.
+
+\begin{lem}\label{lem:basic-product}
+Define
+\[
+ \Phi_m(a)=a\left(1+\frac{1-a^2}{m}\right)^{m/2},
+ \qquad \psi(a)=a\exp\left(\frac{1-a^2}{2}\right).
+\]
+Every normalized counterexample satisfies
+\begin{align}
+ |hJ|&\le\Phi_m(a)r\sqrt{Q_0},&
+ \Phi_m(a)&\le\min\{1,\psi(a)\},\label{eq:core}\\
+ \left[\frac{m+1}{m}(1+a^2)s\right]^m&\ge(m+1)^2.&\label{eq:product-basic}
+\end{align}
+For fixed $a$, $\Phi_m(a)$ is nondecreasing in $m$ on its domain $m\ge a^2$. For fixed $m$, it increases up to $a=1$ and decreases thereafter.
+\end{lem}
+\begin{proof}
+The arithmetic--geometric mean inequality in \eqref{eq:normalization} gives
+$a\prod_j|z_j|\le\Phi_m(a)$. Applying the same inequality to the $m+1$ nonnegative numbers $a^2,(m+1-a^2)/m,\ldots,(m+1-a^2)/m$ proves $\Phi_m(a)\le1$. The inequality $\log(1+u)\le u$ gives the bound by $\psi(a)$. These prove \eqref{eq:core}.
+
+Set $u_j=a-z_j$. Then $\E|u|^2=(m+1)(1+a^2)/m$ and
+$\prod_j|u_j|^2=|P'(a)|^2=(m+1)^2/Q_0$.
+The inequalities $Q_0\le s^m$ and $\prod_j|u_j|^2\le(\E|u|^2)^m$ prove \eqref{eq:product-basic}.
+
+For monotonicity in $m$, differentiate $m\log(1+b/m)$ with $b=1-a^2$; the derivative is $\log(1+b/m)-(b/m)/(1+b/m)\ge0$. Monotonicity in $a$ follows by differentiating $\log\Phi_m(a)$, whose derivative has the sign of $1-a^2$ in the interior of its domain. Boundary values follow by continuity.
+\end{proof}
+
+\section{Integral estimates}\label{sec:integral}
+
+The estimates in this section will be used twice: first with simple exponential majorants, and then on rational intervals. Write
+\begin{equation}\label{eq:constants}
+ c_m=\left(\frac m{m-1}\right)^{(m-1)/2},\quad
+ \widetilde c_m=c_m^2,\qquad
+ d_m=\left(\frac m{m-2}\right)^{(m-2)/2},\quad
+ \widetilde d_m=d_m^2.
+\end{equation}
+For $m\ge3$, one has $c_m<5/3$, $\widetilde c_m<3$, $d_m<3$, and $\widetilde d_m<9$.
+
+Let $b:[0,1]\to[0,\infty)$ be a convex majorant of $\beta$. Choose $\kappa\in[0,1]$ with $\E|1-aq|\le\kappa$, and set $\ell(t)=1-(1-\kappa)t$. Convexity of the modulus gives $\E|1-atq|\le\ell(t)$. In particular one may take any $\kappa$ with
+\begin{equation}\label{eq:kappa}
+ \kappa^2\ge\min\{\beta(1),Vs\},
+\end{equation}
+because Cauchy--Schwarz gives $\E|1-aq|=\E|\zeta q|\le\sqrt{Vs}$.
+
+\subsection{The direct estimate}
+
+\begin{lem}\label{lem:direct}
+In the notation above, let
+$\mathcal A(t)=\sum_j|q_j|^2\prod_{k\ne j}|1-atq_k|$.
+Then
+\begin{equation}\label{eq:direct-bounds}
+ \mathcal A(t)\le m\min\left\{
+ \min\{1,c_ms\}\,b(t)^{(m-1)/2},\,
+ \min\{1,\widetilde c_ms\}\,\ell(t)^{m-1}
+ \right\}.
+\end{equation}
+If $I=[l,u]\subset[0,1]$, $a\le a_+$, and $\delta_I=\max\{0,1-a_+u\}$, then, for all $t\in I$,
+\begin{equation}\label{eq:retained}
+ \mathcal A(t)\le ms\min\left\{
+ \left(\frac{mb(t)-\delta_I^2}{m-1}\right)_{+}^{(m-1)/2},\,
+ \left(\frac{m\ell(t)-\delta_I}{m-1}\right)_{+}^{m-1}
+ \right\}.
+\end{equation}
+Here $x_+=\max\{x,0\}$.
+\end{lem}
+\begin{proof}
+Put $B_j=|1-atq_j|$. The special case of Maclaurin's inequality
+$\sum_j\prod_{k\ne j}B_k\le m(\E B)^{m-1}$ follows, for example, by repeatedly replacing two variables by their arithmetic mean: with their sum fixed, the elementary symmetric function is nondecreasing under this replacement. Continuity gives the equal-variable maximum. Since $|q_j|^2\le1$ and $\E B\le\min\{\sqrt{b(t)},\ell(t)\}$, this proves the terms with coefficient $1$ in \eqref{eq:direct-bounds}.
+
+For a fixed omitted index $j$, the arithmetic--geometric mean inequality gives
+$\prod_{k\ne j}B_k\le c_m b(t)^{(m-1)/2}$ and
+$\prod_{k\ne j}B_k\le\widetilde c_m\ell(t)^{m-1}$.
+Multiply by $|q_j|^2$ and sum to obtain the other terms in \eqref{eq:direct-bounds}.
+On $I$, each $B_j\ge1-at|q_j|\ge\delta_I$. Thus the sums over $k\ne j$ are bounded by $mb(t)-\delta_I^2$ for the squares and by $m\ell(t)-\delta_I$ for the moduli. The same argument proves \eqref{eq:retained}.
+\end{proof}
+
+The positive parts in \eqref{eq:retained} permit harmless enlargement of interval bounds. On an interval containing admissible data, the expressions before taking positive parts are already nonnegative. The lower bound $\delta_I$ is fixed throughout $I$; it is not replaced by a function of $t$ when convexity is used for integration.
+
+\subsection{Centered interpolation}
+
+Set $w_j=q_j-\mu$, so that $\E w=0$ and $\E|w|^2=v$. The first estimate below is the centered interpolation estimate. The second avoids division by $D(t)$ and is needed because $a$ may exceed one.
+
+\begin{lem}\label{lem:interpolation}
+For every $t\in[0,1]$ with $D(t)\ne0$,
+\begin{equation}\label{eq:interpolation-first}
+ |F(t)-D(t)^m|
+ \le\frac{ma^2t^2v}{2|D(t)|}
+ \min\{c_m b(t)^{(m-1)/2},\widetilde c_m\ell(t)^{m-1}\}.
+\end{equation}
+For every $t\in[0,1]$, including zeros of $D$,
+\begin{equation}\label{eq:interpolation-second}
+ |F(t)-D(t)^m|
+ \le\frac{m(m-1)a^2t^2v}{2}
+ \min\{d_m b(t)^{(m-2)/2},\widetilde d_m\ell(t)^{m-2}\}.
+\end{equation}
+\end{lem}
+\begin{proof}
+For $0\le\theta\le1$, define
+$G_\theta(t)=\prod_j(D(t)-at\theta w_j)$.
+Each factor is $(1-\theta)D(t)+\theta(1-atq_j)$. Its mean square, averaged over $j$, is $|D(t)|^2+a^2t^2\theta^2v\le\beta(t)$; its mean modulus is at most $\ell(t)$, because $|D(t)|\le\E|1-atq|\le\ell(t)$.
+
+Using $\sum_jw_j=0$ in the derivative of $G_\theta$ yields the polynomial identity
+\[
+ D(t)\,\partial_\theta G_\theta(t)
+ =-a^2t^2\theta\sum_jw_j^2
+       \prod_{k\ne j}(D(t)-at\theta w_k).
+\]
+The omitted-factor estimates from the proof of Lemma~\ref{lem:direct}, followed by integration in $\theta$, prove \eqref{eq:interpolation-first}.
+
+Also $\partial_\theta G_0(t)=0$. Taylor's formula with integral remainder gives
+$G_1-G_0=\int_0^1(1-\theta)\partial_\theta^2G_\theta\dd\theta$.
+For the ordered pairs in the second derivative,
+$\sum_{j\ne k}|w_jw_k|\le m(m-1)v$ by Cauchy--Schwarz.
+The products with two factors omitted are bounded by $d_m b^{(m-2)/2}$ and $\widetilde d_m\ell^{m-2}$. This proves \eqref{eq:interpolation-second}. No division by $D$ or $v$ is used in this argument.
+\end{proof}
+
+Suppose $\mathcal C$ is any upper bound for $|hJ|$, and $\mathcal U(t)$ is any majorant satisfying $|F(t)-D(t)^m|\le a^2t^2v\mathcal U(t)$. Lemmas~\ref{lem:identities} and~\ref{lem:moments} imply the necessary inequalities
+\begin{align}
+ 1&\le\kappa^m+\frac{m}{m+1}\mathcal C
+       +a^2\int_0^1t\mathcal A(t)\dd t,\label{eq:direct-test}\\
+ 1&\le\mathcal C+(Vv)^{(m+1)/2}+Kv,
+ \qquad K=(m+1)a^3r\int_0^1t^2\mathcal U(t)\dd t.\label{eq:absolute-test}
+\end{align}
+There is also a useful version which does not use $\mathcal C$. Since the \emph{actual} quantity $|hJ|$ is at most $r$ by \eqref{eq:core}, division by $1-r>0$ in \eqref{eq:center-identity} gives
+\begin{equation}\label{eq:ratio-test}
+ 1\le(1+r)\left\{V^{(m+1)/2}(1-r^2)^{(m-1)/2}+K\right\}.
+\end{equation}
+Here we used $v\le1-r^2$. An arbitrarily chosen interval upper bound $\mathcal C$ need not itself be at most $r$; \eqref{eq:ratio-test} uses \eqref{eq:core} before interval enlargement.
+
+\subsection{Convex integration on a rational mesh}
+
+For a nonnegative convex function $f$ on $[l,u]$, its endpoint chord gives
+\begin{align}
+ \int_l^u tf(t)\dd t
+ &\le\frac{(u-l)(2l+u)}6f(l)
+      +\frac{(u-l)(l+2u)}6f(u),\label{eq:chord-one}\\
+ \int_l^u t^2f(t)\dd t
+ &\le\frac{(u-l)(3l^2+2lu+u^2)}{12}f(l)
+      +\frac{(u-l)(l^2+2lu+3u^2)}{12}f(u).\label{eq:chord-two}
+\end{align}
+These formulas follow by integrating the affine chord against $t$ and $t^2$; all four weights are nonnegative.
+
+Every separate power of $b$ or $\ell$ in Lemma~\ref{lem:direct} is convex when $m\ge3$. The same holds for the bounds in Lemma~\ref{lem:interpolation} when $m\ge4$. On a mesh interval where $|D|$ has a positive constant lower bound, that constant is used in \eqref{eq:interpolation-first}. If there is no such lower bound, only \eqref{eq:interpolation-second} is used. We integrate each available convex majorant separately by \eqref{eq:chord-one} or \eqref{eq:chord-two} and then take the smallest resulting upper bound. We do not assert that the pointwise minimum of convex functions is convex. For $m=3$, the exponent $(m-2)/2$ is below one; the centered integral tests are therefore not used in that degree.
+
+\section{All sufficiently large degrees}\label{sec:large}
+
+The estimates already obtained suffice when $m$ is large. The particular cutoff below is chosen for convenience, not optimized.
+
+\begin{prop}\label{prop:large}
+There is no normalized counterexample with $m\ge100000$.
+\end{prop}
+\begin{proof}
+Throughout this proof we may replace $V_m$ by $1$. From \eqref{eq:moment-a} and \eqref{eq:moment-b},
+\begin{equation}\label{eq:xlower}
+ x\ge a(1-\sqrt{1-s})
+ \ge a\left(1-\frac a{\sqrt{1+a^2}}\right)
+ \ge\frac{a}{2(1+a^2)}.
+\end{equation}
+The last step follows by rationalizing the difference. Define
+$g(a)=a^2/[4(1+a^2)^2]$. Since $\rho\ge r^2\ge x^2$, \eqref{eq:beta} and \eqref{eq:xlower} give $\beta(t)\le1-g(a)t$.
+More generally, whenever $\beta(t)\le1-gt$ with $g>0$, Lemma~\ref{lem:direct} and \eqref{eq:remainder} give
+\begin{equation}\label{eq:exp-direct}
+ |F(1)|\le e^{-mg/2},\qquad
+ |\mathcal R|\le\frac{4ma^2}{(m-1)^2g^2}.
+\end{equation}
+Indeed, use $\mathcal A(t)\le m\beta(t)^{(m-1)/2}$ and extend the integral of $te^{-(m-1)gt/2}$ to $[0,\infty)$. From \eqref{eq:differential}, \eqref{eq:origin}, and \eqref{eq:core}, we have
+\begin{equation}\label{eq:large-direct}
+ 1\le |F(1)|+\psi(a)+|\mathcal R|.
+\end{equation}
+We now consider four ranges of $a$.
+
+\step{Step 1. $0<a\le1/10$.}
+The strict inequalities $|a-\zeta_j|>1$ imply $|P'(a)|>m+1$.
+The arithmetic--geometric mean bound used in Lemma~\ref{lem:basic-product} yields
+$m\log(1+a^2)>2\log(m+1)-m\log(1+1/m)>2\log(m+1)-1$.
+Consequently
+\begin{equation}\label{eq:small-a-m}
+ ma^2>2\log(m+1)-1>19.
+\end{equation}
+The middle expression in \eqref{eq:xlower} is at least $9a/10$ in this range. Hence $\beta(t)\le1-(4/5)a^2t$. In \eqref{eq:exp-direct} take $g=(4/5)a^2$. Using \eqref{eq:small-a-m}, we obtain $|F(1)|<1/100$ and $|\mathcal R|<8/(ma^2)<8/19$. Also $\psi(a)<1/6$. The right side of \eqref{eq:large-direct} is therefore less than $1/100+1/6+8/19<1$.
+
+\step{Step 2. $a\in[1/10,3/4]\cup[5/4,2]$.}
+Here $g(a)\ge1/500$, so $|F(1)|<1/1000$. Set $H_0(a)=16(1+a^2)^4/a^2$. Equation~\eqref{eq:exp-direct} gives $|\mathcal R|<5H_0(a)/m$. The following upper bounds suffice:
+\begin{center}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Range of $a$ & Upper bound for $\psi(a)$ & Upper bound for $H_0(a)$\\
+\midrule
+$[1/10,1/2]$ & $3/4$ & $1665$\\
+$[1/2,3/4]$ & $19/20$ & $170$\\
+$[5/4,3/2]$ & $19/20$ & $794$\\
+$[3/2,2]$ & $17/20$ & $2500$\\
+\bottomrule
+\end{tabular}
+\end{center}
+To check the table, $\psi$ increases before $1$ and decreases afterwards, while the logarithmic derivative of $(1+u)^4/u$ has the sign of $3u-1$. Thus only the displayed endpoints need be checked. The exponential comparisons are
+$e^{3/8}<3/2$, $e^{7/32}<19/15$, $e^{9/32}>25/19$, and $e^{5/8}>30/17$; they follow by the exponential series (an exact check is included in the supplement). In all four rows the sum of the last two bounds in \eqref{eq:large-direct}, with the factor $5/m$ on $H_0$, and $1/1000$ is less than one. The largest such sum is $9907/10000$.
+
+\step{Step 3. $3/4\le a\le5/4$.}
+Equation~\eqref{eq:xlower} gives $r\ge6/25$. Put $B_*=589/625$. Then $\rho\ge36/625$, $\beta(1)\le B_*$, and $a^2s\ge9/25$ by \eqref{eq:moment-b}. Thus
+\begin{equation}\label{eq:central-beta}
+ \beta(t)\le1-t/5\quad(0\le t\le1/2),\qquad
+ \beta(t)\le B_*\quad(1/2\le t\le1).
+\end{equation}
+For the second inequality use convexity, $\beta(1/2)\le9/10$, and the endpoint bound at $1$. Also $|D(t)|\ge3/8$ on $[0,1/2]$.
+
+Let $E=(m+1)|h|\int_0^1|F-D^m|\dd t$, and split it as $E_1+E_2$ at $1/2$. Lemma~\ref{lem:interpolation} and \eqref{eq:central-beta} imply
+\begin{align}
+ E_1&\le\frac{78125}{9}\frac{(m+1)m}{(m-1)^3}v
+       \le\frac{10000}{m}v\le\frac v{10},\label{eq:Efirst}\\
+ E_2&\le2(m+1)m^2vB_*^{(m-2)/2}
+       \le2(m+1)m^2v e^{-m/40}
+       \le\frac{6\cdot10^{12}}{m^3}v<\frac v{10}.\label{eq:Esecond}
+\end{align}
+For \eqref{eq:Efirst}, use $c_m<5/3$, $a\le5/4$, $|h|\le5/4$, and integrate $t^2e^{-(m-1)t/10}$ on $[0,\infty)$. For \eqref{eq:Esecond}, use the nonsingular estimate, $d_m<3$, and $\int_{1/2}^1t^2\dd t=7/24$; the final inequality follows from $e^{m/40}\ge(m/40)^6/720$.
+Since $v\le1-r^2\le B_*$,
+$v^{(m+1)/2}\le2(1-r)B_*^{(m-1)/2}\le(1-r)/5$.
+Now \eqref{eq:center-identity}, \eqref{eq:moment-b}, \eqref{eq:core}, \eqref{eq:Efirst}, and \eqref{eq:Esecond} give
+\[
+ 1\le r+\frac{1-r}{5}+\frac v5
+ \le r+\frac35(1-r)<1.
+\]
+
+\step{Step 4. $a\ge2$.}
+From \eqref{eq:moment-a}, $a^2s\le2ar-r^2\le2a-1$, so $s\le3/4$. Moreover $\beta(1)\le1$ and Minkowski's inequality give $a\sqrt s\le1+\sqrt{\beta(1)}\le2$. Therefore $a^2s\le4$ and
+$\E|1-aq|\le\sqrt s\le\sqrt3/2<7/8$.
+Use $\ell(t)=1-t/8$ in Lemma~\ref{lem:direct}. Then $|F(1)|\le(7/8)^m$ and
+\[
+ |\mathcal R|\le12m\int_0^8t(1-t/8)^{m-1}\dd t
+ =\frac{768}{m+1}.
+\]
+Also $\psi(a)\le2e^{-3/2}<9/20$. These bounds contradict \eqref{eq:large-direct}. The four steps exhaust all $a>0$.
+\end{proof}
+
+\section{Product bounds for the small degrees}\label{sec:products}
+
+The direct estimates alone lose information when both the reciprocal mean and the relevant products are close to their extremal values. We next retain the covariance of the original root distances and the variation of the reciprocal moduli. All notation from \eqref{eq:normalization}--\eqref{eq:reciprocal} remains in force.
+
+\subsection{An elementary symmetric inequality}
+
+For a vector $Y=(Y_1,\ldots,Y_m)$, let $e_k(Y)=\sum_{1\le j_1<\cdots<j_k\le m}Y_{j_1}\cdots Y_{j_k}$, with $e_0(Y)=1$.
+
+\begin{lem}\label{lem:symmetric}
+If $m\ge3$, $Y_j\ge0$, and $\sum_jY_j=m$, then
+\begin{equation}\label{eq:symmetric}
+ e_{m-1}(Y)\le3+(m-3)e_m(Y).
+\end{equation}
+\end{lem}
+\begin{proof}
+Maximize $f=e_{m-1}-(m-3)e_m$ on the closed simplex. On its boundary, $f=0$ if two or more coordinates vanish. If exactly one vanishes, the arithmetic--geometric mean inequality gives $f\le(m/(m-1))^{m-1}<3$. At the point $(1,\ldots,1)$, $f=3$.
+
+It remains to exclude a nonconstant interior maximum. At an interior stationary point, two unequal coordinates $Y_i,Y_j$ satisfy
+\begin{equation}\label{eq:stationary}
+ \sum_{\ell\ne i,j}\frac1{Y_\ell}=m-3.
+\end{equation}
+Indeed, the difference of the corresponding partial derivatives is
+$(Y_j-Y_i)\prod_{\ell\ne i,j}Y_\ell\bigl(\sum_{\ell\ne i,j}Y_\ell^{-1}-(m-3)\bigr)$.
+If three distinct values occurred, applying \eqref{eq:stationary} to two pairs sharing an index would make the other two coordinates equal. Thus at most two values, say $u\ne w$, occur.
+
+Suppose both occur at least twice. For a pair of equal coordinates $u,u$, the second derivative along the direction $(1,-1)$ is nonpositive only if
+$\sum_{\ell\ne i,j}Y_\ell^{-1}-(m-3)\ge0$.
+Subtracting \eqref{eq:stationary} for a mixed pair $u,w$ gives $1/w-1/u\ge0$, hence $u\ge w$. The pair $w,w$ gives $w\ge u$, a contradiction. Therefore one value, say $u$, occurs $m-1$ times. Equation~\eqref{eq:stationary} becomes $(m-2)/u=m-3$. For $m=3$ this is impossible; for $m>3$ it forces the remaining coordinate to be $m-(m-1)(m-2)/(m-3)=-2/(m-3)<0$. There is no nonconstant interior maximum, which proves \eqref{eq:symmetric}.
+\end{proof}
+
+\subsection{The original root distances}
+
+Put $u_j=a-z_j$, where the $z_j$ are the zeros in \eqref{eq:normalization}, and define
+\begin{equation}\label{eq:ABC}
+ \begin{gathered}
+ A_0=\E u=\frac{(m+1)a}{m},\qquad
+ B_0=\E|u|^2=\frac{(m+1)(1+a^2)}m,\\
+ C_0=B_0-A_0^2=\frac{(m+1)(m-a^2)}{m^2}.
+ \end{gathered}
+\end{equation}
+The symbol $u_j$ in this subsection denotes an original root distance, not a critical-point distance.
+
+\begin{lem}\label{lem:root-product}
+If $C_0>0$, then
+\begin{equation}\label{eq:root-product}
+ Q_0\ge\frac{(m+1)^2}{B_0^m}(1+\gamma),
+ \qquad
+ \gamma=\frac m3\frac{|A_0-B_0\mu/2|^2}{C_0}.
+\end{equation}
+If $C_0=0$, then $A_0-B_0\mu/2=0$ and the same bound holds with $\gamma=0$.
+\end{lem}
+\begin{proof}
+Logarithmic differentiation at the simple zero $a$ gives
+\begin{equation}\label{eq:inverse-root-mean}
+ \frac{P''(a)}{P'(a)}=2\sum_j\frac1{a-z_j}
+ =\sum_j\frac1{a-\zeta_j},\qquad \E\frac1u=\frac\mu2.
+\end{equation}
+Put $T=\E|1/u|^2$ and $M=\mu/2$. Cauchy--Schwarz applied to $u-A_0$ and $1/u-M$ gives
+$|1-A_0M|^2\le C_0(T-|M|^2)$.
+Rearranging yields
+\begin{equation}\label{eq:root-covariance}
+ B_0T\ge1+\frac{|A_0-B_0M|^2}{C_0}.
+\end{equation}
+Apply Lemma~\ref{lem:symmetric} to $Y_j=|u_j|^2/B_0$. Since
+$e_{m-1}(Y)=e_m(Y)\,mB_0T$, equations \eqref{eq:symmetric} and \eqref{eq:root-covariance} imply $e_m(Y)(1+\gamma)\le1$. Finally,
+$e_m(Y)=(m+1)^2/(B_0^mQ_0)$, proving \eqref{eq:root-product}.
+If $C_0=0$, all $u_j=A_0$, and \eqref{eq:inverse-root-mean} gives $M=1/A_0$. The asserted vanishing and the weaker product bound follow directly.
+\end{proof}
+
+\subsection{Variation of the reciprocal moduli}
+
+Write $X_j=|q_j|^2$, so that $0<X_j<1$, $\E X=s$, and $Q_0=\prod_jX_j$.
+
+\begin{lem}\label{lem:radial-loss}
+If $V>0$, then
+\begin{equation}\label{eq:radial-loss}
+ Q_0\le s^m\exp\left(-\frac{m|\mu-as|^2}{2sV}\right).
+\end{equation}
+For $V=0$, the bound $Q_0\le s^m$ remains valid.
+\end{lem}
+\begin{proof}
+For $0<u,s\le1$,
+\begin{equation}\label{eq:log-loss}
+ \log u\le\log s+\frac{u-s}{s}-\frac{(u-s)^2}{2s}.
+\end{equation}
+To verify this, the derivative with respect to $u$ of the difference between the left and right sides is $(u-1)(u-s)/(su)$, and that difference vanishes at $u=s$. Summing \eqref{eq:log-loss} with $u=X_j$ gives
+$\log Q_0\le m\log s-m\Var(X)/(2s)$.
+The identity $\mu-as=-\E[\overline\zeta(X-s)]$ and Cauchy--Schwarz give $|\mu-as|^2\le V\Var(X)$. This proves \eqref{eq:radial-loss}.
+\end{proof}
+
+A product lower bound also controls the possible distance between $a$ and $\mu$.
+
+\begin{lem}\label{lem:radial-bounds}
+Put $\Delta=1-s$. If $m\Delta<1$, then
+\begin{equation}\label{eq:finite-radial}
+ |a-\mu|^2\le\frac{\Delta^2}{1-m\Delta},\qquad
+ V_*\le1+\frac{\Delta}{1-m\Delta}-a^2.
+\end{equation}
+Without this additional restriction,
+\begin{equation}\label{eq:product-radial}
+ m|a-\mu|\le Q_0^{-1/2}-Q_0^{1/2}.
+\end{equation}
+\end{lem}
+\begin{proof}
+Since $\sum_j(1-X_j)=m\Delta$, each $X_j\ge1-m\Delta$. Also $\E(1/q)=a$, by \eqref{eq:critical-moments}. Hence
+$|a-\mu|=|a-\overline\mu|\le\E[(1-X)/\sqrt X]$ and
+$V_*=\E(1/X)-a^2$.
+These identities imply \eqref{eq:finite-radial}.
+
+For \eqref{eq:product-radial}, set $t_j=-\log X_j\ge0$. The function $2\sinh(t/2)$ vanishes at zero and has nondecreasing derivative on $[0,\infty)$, so it is superadditive. Therefore
+$m|a-\mu|\le\sum_j2\sinh(t_j/2)\le2\sinh(\sum_jt_j/2)=Q_0^{-1/2}-Q_0^{1/2}$.
+\end{proof}
+
+The next lemma uses both a product lower bound and a lower bound on each $X_j$. Its proof is the elementary convex mass-transfer argument underlying finite-dimensional majorization.
+
+\begin{lem}\label{lem:packing}
+Suppose $0<L\le Q_0$, $s\le s_+$, and $0<\eta<s_+\le1$ satisfy
+\begin{equation}\label{eq:eta}
+ \eta\left(\frac{ms_+-\eta}{m-1}\right)^{m-1}<L.
+\end{equation}
+Then $X_j>\eta$ for all $j$. Assume also $L\le1$, and choose an integer $k\in\{0,\ldots,m-1\}$ such that $\eta^{k+1}\le L\le\eta^k$. Put $z=L/\eta^k$. Then
+\begin{align}
+ m|a-\mu|&\le M:=\frac{k(1-\eta)}{\sqrt\eta}+\frac{1-z}{\sqrt z},\label{eq:packing-distance}\\
+ V_*&\le T-a^2,\qquad
+ T:=\frac{k/\eta+1/z+m-k-1}{m}.\label{eq:packing-variance}
+\end{align}
+\end{lem}
+\begin{proof}
+If $X_j=x\le\eta$, the arithmetic--geometric mean inequality gives
+$Q_0\le x[(ms_+-x)/(m-1)]^{m-1}$.
+This expression increases for $0\le x\le s_+$, contradicting \eqref{eq:eta}. Notice that \eqref{eq:eta} also implies $L>\eta^m$, so the specified $k$ exists.
+
+Set $t_j=-\log X_j$ and $b=-\log\eta$. Then $0\le t_j\le b$ and $\sum_jt_j\le-\log L$. For any convex nondecreasing function $f$ on $[0,b]$, moving mass from the smaller of two interior coordinates to the larger, with their sum fixed, does not decrease $\sum_jf(t_j)$. Repetition leaves at most one interior coordinate. Increasing the total mass up to $-\log L$ is permitted because $-\log L<mb$. The resulting vector has $k$ coordinates $b$, one coordinate $-\log z$, and all remaining coordinates zero.
+
+Apply this argument first to $f(t)=2\sinh(t/2)$ and then to $f(t)=e^t$. The identities in the proof of Lemma~\ref{lem:radial-bounds} give \eqref{eq:packing-distance} and \eqref{eq:packing-variance}.
+\end{proof}
+
+\section{Centered coefficients and the limiting region}\label{sec:coefficients}
+
+We now return to the centered variables $w_j=q_j-\mu$ introduced in the proof of Lemma~\ref{lem:interpolation}. The following consequence of Schoenberg's inequality controls every coefficient in their product.
+
+\begin{lem}\label{lem:coefficients}
+For $2\le k\le m$,
+\begin{equation}\label{eq:coefficients}
+ |e_k(w)|\le\binom mk
+ \left(\frac{k-1}{m-1}v\right)^{k/2}.
+\end{equation}
+\end{lem}
+\begin{proof}
+Let $R(z)=\prod_j(z-w_j)$. The centroid of the zeros of every derivative of $R$ is zero. Apply Lemma~\ref{lem:schoenberg} successively to $R,R',\ldots,R^{(m-k-1)}$, using degrees $m,m-1,\ldots,k+1$. If $\lambda_1,\ldots,\lambda_k$ are the zeros of $R^{(m-k)}$, then
+$\sum_j|\lambda_j|^2\le k(k-1)v/(m-1)$.
+The constant term of the monic normalization of $R^{(m-k)}$ is $(-1)^ke_k(w)/\binom mk$. Thus \eqref{eq:coefficients} follows from the arithmetic--geometric mean inequality for $|\lambda_j|^2$. For $k=m$, the same argument uses $\sum_j|w_j|^2=mv$ directly.
+\end{proof}
+
+For nonnegative integers $k,p$ and $d\ge0$, define
+\begin{equation}\label{eq:integral-polynomial}
+ S_{k,p}(d)=\sum_{j=0}^p\binom{k+j}{k}d^j,\qquad
+ I_{k,p}(d)=\frac{S_{k,p}(d)}{(k+p+1)\binom{k+p}{k}}
+          =\int_0^1t^k(1-t+dt)^p\dd t.
+\end{equation}
+The last equality follows by expanding $(1-t+dt)^p$ and integrating each beta integral.
+
+\begin{lem}\label{lem:coefficient-test}
+If $\mathcal C\ge|hJ|$ and $d\ge|1-h|$, then every normalized counterexample satisfies
+\begin{equation}\label{eq:coefficient-test}
+ 1\le\mathcal C+d^{m+1}
+  +ar\sum_{k=2}^m
+     \left(\frac{a^2v(k-1)}{m-1}\right)^{k/2}S_{k,m-k}(d).
+\end{equation}
+\end{lem}
+\begin{proof}
+Since $e_1(w)=0$,
+\begin{equation}\label{eq:product-expansion}
+ F(t)=D(t)^m+\sum_{k=2}^m(-at)^ke_k(w)D(t)^{m-k}.
+\end{equation}
+The bound $|D(t)|\le1-t+dt$, Lemma~\ref{lem:coefficients}, and \eqref{eq:integral-polynomial} apply term by term in \eqref{eq:center-identity}. Since
+$(m+1)\binom mk I_{k,m-k}(d)=S_{k,m-k}(d)$,
+this gives \eqref{eq:coefficient-test}.
+\end{proof}
+
+\subsection{Retaining the quadratic term}
+
+When $r>0$, write $\mu=re^{i\theta}$ and put
+$q'_j=e^{-i\theta}q_j$, $w'_j=q'_j-r$. Then $\E q'=r$. Let $W=\Var(\Rea q')$. The identity $e_2(w')=-\tfrac12\sum_j(w'_j)^2$ gives
+\begin{equation}\label{eq:quadratic-real}
+ \Rea e_2(w')=\frac m2v-mW.
+\end{equation}
+To estimate $W$, we record the classical variance bound for a probability distribution on an interval.
+
+\begin{lem}[{\cite[p.~353]{BD00}}]\label{lem:bd}
+Let $Y_1,\ldots,Y_N\in[L,U]$ be real numbers, and let $\omega_1,\ldots,\omega_N\ge0$ satisfy $\sum_j\omega_j=1$. If $b=\sum_j\omega_jY_j$, then
+$\sum_j\omega_j(Y_j-b)^2\le(U-b)(b-L)$.
+\end{lem}
+\begin{proof}
+Expand $\sum_j\omega_j(U-Y_j)(Y_j-L)\ge0$ and subtract $b^2$.
+\end{proof}
+
+For the reciprocal data, the interval endpoints can be bounded explicitly.
+
+\begin{lem}\label{lem:real-variance}
+Suppose $r>0$ and $|q_j|^2\ge t_0\ge0$ for all $j$. Set
+\begin{equation}\label{eq:real-lower}
+ L_r=\max\left\{-1,\,mr-(m-1),\,
+ \frac{m^2r^2+t_0-(m-1)^2}{2mr}\right\}.
+\end{equation}
+Then
+\begin{equation}\label{eq:real-variance}
+ \Rea q'_j\ge L_r,\qquad
+ W\le\min\{(m-1)(1-r)^2,(1-r)(r-L_r)\}.
+\end{equation}
+\end{lem}
+\begin{proof}
+The bounds $|q'_j|\le1$ and $\sum_jq'_j=mr$ give the first two entries in \eqref{eq:real-lower}. Also $|mr-q'_j|\le m-1$; squaring and using $|q'_j|^2\ge t_0$ gives the third.
+Apply Lemma~\ref{lem:bd} with $N=m$, $Y_j=\Rea q'_j$, $\omega_j=1/m$, $L=L_r$, $U=1$, and $b=r$ to obtain the second bound on $W$. For the first, let $d_j=1-\Rea q'_j\ge0$. Since $\sum_jd_j=m(1-r)$,
+$W=m^{-1}\sum_jd_j^2-(1-r)^2\le(m-1)(1-r)^2$.
+\end{proof}
+
+Define
+\begin{equation}\label{eq:K2}
+ K_2(h)=(m+1)h\int_0^1t^2(1-ht)^{m-2}\dd t.
+\end{equation}
+Its contribution to the last term of \eqref{eq:center-identity} is $-a^2e_2(w)K_2(h)$. We shall keep its real part instead of replacing it by an absolute-value error.
+
+\begin{lem}\label{lem:phase}
+Suppose $0<h_0:=ar\le1$, $\varepsilon\ge|e^{i\theta}-1|$, and $d\ge|1-h|$. Then
+\begin{equation}\label{eq:phase}
+ |e^{2i\theta}K_2(h)-K_2(h_0)|
+ \le E_2:=(m+1)h_0\varepsilon
+ \{3I_{2,m-2}(d)+(m-2)h_0I_{3,m-3}(d)\}.
+\end{equation}
+If $0<L_2\le\Rea e_2(w')$, $0\le K_-\le K_2(h_0)$, and $\mathcal C\ge|hJ|$, then
+\begin{equation}\label{eq:signed-test}
+ \begin{split}
+ 1\le{}&\mathcal C+d^{m+1}-a^2K_-L_2
+       +\frac{ma^2v}{2}E_2\\
+ &\quad+ar\sum_{k=3}^m
+ \left(\frac{a^2v(k-1)}{m-1}\right)^{k/2}S_{k,m-k}(d).
+ \end{split}
+\end{equation}
+\end{lem}
+\begin{proof}
+We have $h=h_0e^{i\theta}$ and $0\le1-h_0t\le|1-ht|\le1-t+dt$. In the difference of the integrands defining $e^{2i\theta}K_2(h)$ and $K_2(h_0)$, first estimate $|e^{3i\theta}-1|\le3\varepsilon$, and then telescope the difference of the $(m-2)$nd powers. This gives \eqref{eq:phase} by \eqref{eq:integral-polynomial}.
+
+Since $e_2(w)=e^{2i\theta}e_2(w')$ and $|e_2(w')|\le mv/2$ by Lemma~\ref{lem:coefficients},
+$\Rea(e_2(w)K_2(h))\ge K_-L_2-(mv/2)E_2$.
+Take real parts in \eqref{eq:center-identity}, use \eqref{eq:product-expansion} for the quadratic term, and estimate the remaining terms as in Lemma~\ref{lem:coefficient-test}. This proves \eqref{eq:signed-test}.
+\end{proof}
+
+\subsection{An analytic neighborhood of \texorpdfstring{$r=1$}{r=1}}
+
+The finite verification must not leave an unchecked neighborhood of a limiting equality configuration. The next lemma treats that region uniformly, without computation.
+
+\begin{lem}\label{lem:near}
+There is no normalized counterexample with $3\le m\le12$ and $r\ge99999/100000$.
+\end{lem}
+\begin{proof}
+Put $\delta=1-r$. Then $0<\delta\le10^{-5}$, and $\Delta=1-s\le2\delta$.
+
+\step{Step 1. Control of the phase.}
+Each $X_j=|q_j|^2\ge1-m\Delta\ge1-24\delta>(99/100)^2$.
+Lemma~\ref{lem:radial-bounds} gives
+$|a-\mu|\le2\delta/\sqrt{1-24\delta}<(21/10)\delta$.
+It follows that
+\begin{equation}\label{eq:near-controls}
+ 1-4\delta\le a\le1+2\delta,\qquad
+ a^2<2,\qquad |e^{i\theta}-1|<5\delta,\qquad |h-1|<12\delta.
+\end{equation}
+For the phase bound, use $|a-r|\le|a-\mu|$ and
+$|\mu-r|\le|\mu-a|+|a-r|<(21/5)\delta$, then divide by $r$.
+The bound for $h-1$ follows from $|a\mu-1|\le a|\mu-r|+|ar-1|$.
+Also $|D(t)|\le1-t+12\delta t\le1$ on $[0,1]$.
+
+\step{Step 2. The quadratic contribution.}
+From \eqref{eq:K2}, $K_2(1)=2/[m(m-1)]$.
+Telescoping the difference of the powers and using $|D(t)|\le1$ gives
+\[
+ |K_2(h)-K_2(1)|
+ \le(m+1)|h-1|\left(\frac13+\frac{m-2}{4}\right)
+ \le442\delta.
+\]
+Using \eqref{eq:near-controls} once more, we obtain
+$|e^{2i\theta}K_2(h)-K_2(1)|<450\delta$.
+Equations \eqref{eq:quadratic-real} and \eqref{eq:real-variance}, together with $|e_2(w')|\le mv/2$, therefore imply
+\begin{equation}\label{eq:near-quadratic}
+ \Rea(e_2(w)K_2(h))
+ \ge\frac{v}{m-1}-2\delta^2-225m\delta v
+ \ge-2\delta^2.
+\end{equation}
+The last step uses $m\le12$ and $\delta\le10^{-5}$.
+
+\step{Step 3. The higher coefficients.}
+Set $\tau=a\sqrt v$. Since $v\le1-r^2\le2\delta$, we have
+$\tau\le2\sqrt{2\delta}<1/100$.
+The binomial series gives
+$S_{k,m-k}(12\delta)\le(1-12\delta)^{-k-1}<2$ for $3\le k\le m\le12$.
+By \eqref{eq:near-controls}, $|h|<2$. Lemma~\ref{lem:coefficients} and the calculation in Lemma~\ref{lem:coefficient-test} thus bound the sum of the terms with $k\ge3$ by
+$4\sum_{k=3}^{\infty}\tau^k<5\tau^3<128\delta^{3/2}$.
+
+Now use \eqref{eq:core}, \eqref{eq:center-identity}, and \eqref{eq:near-quadratic}. The quadratic term is at most $4\delta^2$, the endpoint term is at most $(12\delta)^4$, and hence
+\[
+ 1\le1-\delta+4\delta^2+128\delta^{3/2}+(12\delta)^4.
+\]
+This is impossible, because
+$4\delta+128\sqrt\delta+20736\delta^3<4/10^5+128/300+20736/10^{15}<1/2$.
+\end{proof}
+
+\section{Finite verification and proof of the theorem}\label{sec:finite}
+
+We first reduce the root position to a fixed bounded interval. This reduction is independent of the cutoff in Proposition~\ref{prop:large}.
+
+\begin{lem}\label{lem:compact}
+Every normalized counterexample satisfies $0<a<5$.
+\end{lem}
+\begin{proof}
+Suppose $a\ge5$. From \eqref{eq:moment-a} and \eqref{eq:moment-b},
+$a^2s\le2ar$ and $ar\le1+\sqrt s$. Hence, with $y=\sqrt s$, one has $25y^2\le2+2y$, which implies $y<1/3$ and $a^2s<8/3$. We may therefore use $\ell(t)=1-2t/3$ in Lemma~\ref{lem:direct}. It gives
+$|F(1)|\le3^{-m}$ and
+$|\mathcal R|\le8m\int_0^{3/2}t(1-2t/3)^{m-1}\dd t=18/(m+1)$.
+Also \eqref{eq:core} gives $|hJ|\le r s^{m/2}\le3^{-(m+1)}$. Since $a^2\le m$, we have $m+1\ge26$. Equations \eqref{eq:origin} and \eqref{eq:differential} would then imply
+$1\le3^{-m}+3^{-(m+1)}+18/(m+1)\le3^{-25}+3^{-26}+9/13<1$, a contradiction.
+\end{proof}
+
+Thus all finite-degree counterexamples would give a point of
+\begin{equation}\label{eq:parameter-box}
+ (a,r,s)\in[0,5]\times[0,1]\times[0,1].
+\end{equation}
+The endpoints have been included deliberately. This permits the use of closed dyadic boxes; their common boundaries are checked along with their interiors.
+
+\begin{prop}\label{prop:finite}
+There is no normalized counterexample with $3\le m\le99999$.
+\end{prop}
+\begin{proof}
+The files \file{certificate_n4_to_n13.json} and \file{certificate_n14_to_n100000.json} in the supplement describe finite binary partitions of \eqref{eq:parameter-box}. Each internal node bisects one coordinate interval at its exact midpoint. Each leaf specifies one of the inequalities in Appendix~\ref{app:boxes}. The checkers reconstruct the boxes from their paths, verify that every internal node has both children, and evaluate the designated inequality on the entire leaf. They also verify that the degree blocks are consecutive, with first degree $4$ and last degree $100000$.
+
+For every leaf, either a necessary inequality from Lemmas~\ref{lem:moments}, \ref{lem:basic-product}, and \ref{lem:root-product}--\ref{lem:packing} fails strictly; or Lemma~\ref{lem:near} applies; or one of \eqref{eq:direct-test}, \eqref{eq:absolute-test}, \eqref{eq:ratio-test}, \eqref{eq:coefficient-test}, and \eqref{eq:signed-test} has a right side strictly below one. The parameter bounds used for these tests, including the direction of every degree-dependent estimate, are specified in Appendix~\ref{app:boxes}. The arithmetic in Appendix~\ref{app:arithmetic} gives rigorous upper bounds, so each accepted leaf excludes all normalized counterexamples in that box.
+
+The complete computation at scale $2^{100}$ gives the following counts. The reported margins concern the tests whose final upper bound is compared with one; the elementary rational contradictions and Lemma~\ref{lem:near} are checked separately.
+\begin{center}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+Degrees $n$ & Degree blocks & Leaf boxes & Maximum depth\\
+\midrule
+$4$--$13$ & $10$ & $12821$ & $53$\\
+$14$--$100000$ & $62$ & $20850$ & $33$\\
+\midrule
+Total & $72$ & $33671$ & \\
+\bottomrule
+\end{tabular}
+\end{center}
+Writing the final upper bounds as integers divided by $S=2^{100}$, the smallest positive margins $S-U$ are respectively
+\begin{equation}\label{eq:certificate-margins}
+ 859210771742754798767913
+ \quad\hbox{and}\quad
+ 3409997860291474113416360.
+\end{equation}
+Both full verifications also pass at scale $2^{160}$. The exact logs, file hashes, and commands are supplied in Appendix~\ref{app:arithmetic} and the supplement. Since the reconstructed partitions cover \eqref{eq:parameter-box}, Lemma~\ref{lem:compact} completes the proof.
+\end{proof}
+
+We now prove Theorem~\ref{thm:main}.
+
+\begin{proof}
+If $\sigma_2(P)=0$, all zeros coincide and \eqref{eq:main} is immediate. A multiple zero is itself a critical point. Degrees two and three follow from Lemma~\ref{lem:three}. Any remaining failure of \eqref{eq:main} can be normalized as in \eqref{eq:normalization}. Equations \eqref{eq:critical-moments} exclude $a=0$. For $a>0$, Proposition~\ref{prop:finite} excludes $4\le n\le100000$, and Proposition~\ref{prop:large} excludes $n\ge100001$.
+For sharpness, take $P(z)=z^n-1$. Its centroid is zero, its standard deviation in \eqref{eq:variance} is one, and its only critical point is zero. Every zero is at distance one from that critical point.
+\end{proof}
+
+\appendix
+\section{Bounds on a parameter box}\label{app:boxes}
+
+This appendix gives the mathematical specification of the finite verification. The labels of tests in the data files are only program identifiers; they do not introduce additional mathematical assertions. All interval operations below are interpreted as implications under the assumption that the box contains a normalized counterexample.
+
+Write a box as
+$\mathcal B=[a_-,a_+]\times[r_-,r_+]\times[s_-,s_+]$.
+Define
+\[
+ \begin{gathered}
+ v_+=s_+-r_-^2,\qquad v_-=(s_--r_+^2)_+,\qquad
+ d_a=\max\{0,a_--r_+,r_--a_+\},\\
+ d_h=\max\{0,1-a_+r_+,a_-r_--1\},\qquad
+ \Delta_+=1-s_-.
+ \end{gathered}
+\]
+Thus $v\le v_+$, $v\ge v_-$, $|a-\mu|\ge d_a$, and $|1-a\mu|\ge d_h$.
+
+\subsection{Refinements for a fixed small degree}\label{app:low}
+
+In this subsection $m\in\{3,\ldots,12\}$ is fixed. Begin with $V_0=(m-1)/m$. If $t_*=1-m\Delta_+>0$, set
+\[
+ D_+^2=\frac{\Delta_+^2}{t_*},\qquad
+ V_0=\min\left\{\frac{m-1}{m},1+\frac{\Delta_+}{t_*}-a_-^2\right\}.
+\]
+Otherwise $D_+^2$ is initially unspecified. Lemma~\ref{lem:radial-bounds} shows that, when specified, $|a-\mu|^2\le D_+^2$, and in all cases $V_*\le V_0$. A negative value of $V_0$ excludes the box immediately.
+
+For product estimates define
+\[
+ \begin{gathered}
+ B_+=\frac{m+1}{m}(1+a_+^2),\quad
+ C_+=\frac{m+1}{m^2}(m-a_-^2)_+,\\
+ g_- =\max\left\{0,a_--\frac{1+a_+^2}{2}r_+,
+                   \frac{1+a_-^2}{2}r_--a_+\right\},\\
+ \gamma_-=
+ \begin{cases}
+ \displaystyle\frac m3\left(\frac{m+1}{m}\right)^2\frac{g_-^2}{C_+},&C_+>0,\\
+ 0,&C_+=0,
+ \end{cases}
+ \qquad L=\frac{(m+1)^2(1+\gamma_-)}{B_+^m}.
+ \end{gathered}
+\]
+Equation~\eqref{eq:ABC} and Lemma~\ref{lem:root-product} give $L\le Q_0$. The case $C_0=0$ causes no division by zero: its covariance gap vanishes, so a positive lower bound $g_-$ cannot occur in a box containing such data.
+
+Let $d_s=\max\{0,a_-s_--r_+,r_--a_+s_+\}$. If $s_+V_0>0$, put $\lambda_-=md_s^2/(2s_+V_0)$; otherwise put $\lambda_-=0$. Lemma~\ref{lem:radial-loss} gives
+\begin{equation}\label{eq:box-loss}
+ Q_0\le s_+^m e^{-\lambda_-}.
+\end{equation}
+The value $\lambda_-=0$ when $V_0=0$ uses only the arithmetic--geometric mean bound, so it requires no division by $V_0$.
+
+If $0<L\le s_+^m$, choose $\eta$ by $30$ exact bisections on $[0,s_+]$, retaining a lower endpoint for which \eqref{eq:eta} holds with $s_+$ in place of $s$. Whenever this lower endpoint is positive, Lemma~\ref{lem:packing} supplies $k,z,M,T$. An upward-rounded upper bound $M_+\ge M$ is permitted. Refine
+\begin{equation}\label{eq:box-packed}
+ D_+^2\leftarrow\min\{D_+^2,(M_+/m)^2\},\qquad
+ V=\min\{V_0,T-a_-^2\};
+\end{equation}
+the first minimum ignores an initially unspecified $D_+^2$. If this refinement is unavailable, use $V=V_0$. The product loss in \eqref{eq:box-loss} is kept with its original $V_0$, so the order of these refinements introduces no circularity.
+
+For clarity, Table~\ref{tab:primitive} lists all elementary exclusion tests. The first six tests may use $V_0$; the tests \file{moment_A_packed} and \file{moment_B_packed} use the refined value $V$. Every displayed strict inequality in that table implies that the box contains no normalized counterexample.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Elementary exclusion tests for a fixed degree.}\label{tab:primitive}
+\begin{tabular}{@{}p{.34\textwidth}p{.62\textwidth}@{}}
+\toprule
+Identifier & Sufficient condition for exclusion\\
+\midrule
+\file{degree_bound} & $a_-^2>m$\\
+\file{variance_nonnegative} & $v_+<0$\\
+\file{inverse_moment} & $(a_+^2+V_0)s_+<1$\\
+\file{moment_A} & $d_a^2>(a_+^2+V_0-1)_+(1-s_-)$\\
+\file{moment_B} & $d_h^2>V_0v_+$\\
+\file{product} & $(B_+s_+)^m<(m+1)^2$\\
+\file{finite_radial} & $d_a^2(1-m\Delta_+)>\Delta_+^2$\\
+\file{product_stable} & $(B_+s_+)^m<(m+1)^2 T_{32}(\lambda_-)$\\
+\file{product_root_stable} & $(B_+s_+)^m<(m+1)^2(1+\gamma_-)T_{32}(\lambda_-)$\\
+\file{product_radial} & $L>1$, or $0<L\le1$ and $m^2d_a^2L>(1-L)^2$\\
+\file{product_logcap} & $md_a>M_+$ when $M_+$ is available\\
+\file{critical_variance_negative} & $V_0<0$ or $V<0$\\
+\file{moment_A_packed} & $d_a^2>(a_+^2+V-1)_+(1-s_-)$\\
+\file{moment_B_packed} & $d_h^2>Vv_+$\\
+\file{near_uniform} & $r_-\ge99999/100000$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Here $T_{32}(x)=\sum_{j=0}^{32}x^j/j!\le e^x$ for $x\ge0$. The function $(1-L)/\sqrt L$ decreases on $(0,1]$, which justifies the test \file{product_radial} by \eqref{eq:product-radial}. The test \file{finite_radial} can hold only if $1-m\Delta_+>0$. The last row is precisely Lemma~\ref{lem:near}; it is not a numerical approximation to that lemma.
+
+For the remaining tests assume $V\ge0$ and $v_+\ge0$, and set
+\[
+ H=\max\{r_-^2+(1-V)(1-s_+),\,1-(a_+^2+V)v_+\},\qquad A=a_-^2s_-.
+\]
+If $D_+^2$ is available, include $a_-^2(1-s_+)+r_-^2-D_+^2$ as a third entry in the maximum defining $H$. Lemma~\ref{lem:moments} then gives
+$\rho\ge H$ and $\beta(t)\le b(t):=1-Ht-At(1-t)$.
+The extra entry follows from the identity $\rho=a^2(1-s)+r^2-|a-\mu|^2$.
+If $H>1$, or if the interior minimum of $b$ is negative, the box is excluded; this is \file{beta_negative}. Otherwise the checker requires $0\le H\le1$ and $b(t)\ge0$ on $[0,1]$. When $A>0$, the possible interior minimum occurs at $t=(H+A)/(2A)$ and equals $1-(H+A)^2/(4A)$, so this check is rational and exact.
+
+Define
+\begin{equation}\label{eq:box-endpoint}
+ \kappa^2=\min\{1-H,Vs_+\},\quad
+ d^2=\max\{0,\min\{Vv_+,1-H-a_-^2v_-\}\},\quad
+ \ell(t)=1-t+\kappa t.
+\end{equation}
+Then \eqref{eq:kappa} holds and $d\ge|1-h|$. The latter follows from $|1-h|^2\le Vv$ and $|1-h|^2=\beta(1)-a^2v$. On a box containing admissible data, both quantities inside the inner minimum are nonnegative; the positive part therefore does not weaken the assertion.
+
+Let $\Phi_+$ be the maximum of $\Phi_m$ on $[a_-,a_+]$, evaluated at $1$ if this point belongs to the interval and at the closer endpoint otherwise. The interval upper bound
+\[
+ \mathcal C_+=\frac{\Phi_+r_+s_+^{m/2}}{T_{32}(\lambda_-/2)}
+\]
+follows from \eqref{eq:core} and \eqref{eq:box-loss}. A box entirely outside $a^2\le m$ is already excluded, so every use of $\Phi_+$ has a nonnegative base.
+
+The tests \file{direct} and \file{direct_retained} evaluate \eqref{eq:direct-test}, using \eqref{eq:direct-bounds} alone or also \eqref{eq:retained}. The tests \file{center_absolute} and \file{center_ratio} evaluate \eqref{eq:absolute-test} and \eqref{eq:ratio-test}; they require $m\ge4$. Integrals are bounded by \eqref{eq:chord-one} and \eqref{eq:chord-two}, with the constants in \eqref{eq:constants}. On $I=[l,u]$, a valid constant lower bound for $|D(t)|$ is
+\begin{equation}\label{eq:box-denominator}
+ \max\{0,1-a_+r_+u,a_-r_-l-1\}.
+\end{equation}
+The nonsingular estimates are always retained. Every coefficient outside an integral is replaced by an upper bound, for example $K\le(m+1)a_+^3r_+$ times the computed bound for $\int t^2\mathcal U$.
+
+The test \file{center_coeff} uses \eqref{eq:coefficient-test} with $\mathcal C_+$, $d$ from \eqref{eq:box-endpoint}, and upper endpoints in every nonnegative coefficient. The final test \file{center_positive} uses Lemma~\ref{lem:phase}, in the form \eqref{eq:signed-test}. It requires $r_->0$ and $h_+:=a_+r_+\le1$. Put $h_-=a_-r_-$ and
+\[
+ \begin{gathered}
+ t_0=\max\{0,\eta,1-m(1-s_-)\},\\
+ R_- =\max\left\{-1,mr_--(m-1),
+       \frac{m^2r_-^2+t_0-(m-1)^2}{2mr_-}\right\},\\
+ W_+=\min\{(m-1)(1-r_-)^2,(1-r_-)(r_+-R_-)\},\qquad
+ L_2=\frac m2(v_--2W_+).
+ \end{gathered}
+\]
+Here $\eta=0$ when the refinement in \eqref{eq:box-packed} is unavailable. Each entry in \eqref{eq:real-lower} is nondecreasing in $r>0$ for $0\le t_0\le1$ and $m\ge3$. Lemma~\ref{lem:real-variance} therefore gives $W\le W_+$, and the checker requires $L_2>0$.
+Finally set
+\[
+ x_- =\frac{H+a_-^2s_-}{2a_+},\qquad
+ \varepsilon=\sqrt{\max\{0,2(1-x_-/r_+)\}},\qquad
+ K_-=(m+1)h_-I_{2,m-2}(1-h_+).
+\]
+The identity $2ax=\rho+a^2s$ gives $x\ge x_-$. Hence $\varepsilon\ge|e^{i\theta}-1|$. Also $0\le K_-\le K_2(ar)$. In \eqref{eq:phase}, replace $h_0$ by $h_+$ to bound $E_2$ from above. In \eqref{eq:signed-test}, the negative contribution is bounded from above by $-a_-^2K_-L_2$. It is rounded in the direction appropriate for a subtraction, as specified in Appendix~\ref{app:arithmetic}.
+
+\subsection{Several consecutive degrees in one block}\label{app:mid}
+
+For $m\in[M,N]$, where $13\le M\le N$, the second checker uses only Lemma~\ref{lem:moments}, Lemma~\ref{lem:basic-product}, and the integral bounds. Set
+\[
+ V=1-\frac1N,\quad v_+=s_+-r_-^2,\quad
+ H=\max\{r_-^2+(1-s_+)/N,1-(a_+^2+V)v_+\},\quad
+ A=a_-^2s_-.
+\]
+Use $b(t)=1-Ht-At(1-t)$ and $\kappa^2=\min\{1-H,Vs_+\}$, with the same nonnegativity checks as above. The elementary tests are the degree bound $a_-^2>N$, the nonnegative variance test, the two covariance tests with this $V$, the inverse-moment test, the negative-$b$ test, and the product test described below.
+
+Lemma~\ref{lem:basic-product} gives the uniform bound
+\[
+ |hJ|\le \mathcal C_+:=\max_{a\in[a_-,a_+]}\Phi_N(a)\,r_+s_+^{M/2}.
+\]
+For the elementary product test, let
+$B=\frac{M+1}{M}(1+a_+^2)s_+$. A sufficient contradiction is $B^N<(M+1)^2$. To justify the exponent when $B<1$, note that any admissible point would already require its own product base in \eqref{eq:product-basic} to exceed one. Thus $B\le1$ itself excludes admissible data. When $B>1$, increasing the exponent to $N$ is an upper bound.
+
+In the direct integral bound, use coefficients $\min\{1,(5/3)s_+\}$ and $\min\{1,3s_+\}$, powers $b^{(M-1)/2}$ and $\ell^{M-1}$, and the prefactor $Na_+^2$. The endpoint terms are $\kappa^M$ and $[N/(N+1)]\mathcal C_+$. These are upper bounds because $0\le b,\ell,\kappa\le1$.
+
+For \file{direct_retained}, fix $\delta_I$ as in Lemma~\ref{lem:direct}. On admissible data, $b(t)\ge\delta_I^2$ and $\ell(t)\ge\delta_I$. Therefore
+$(mb(t)-\delta_I^2)/(m-1)$ and $(m\ell(t)-\delta_I)/(m-1)$ are nonincreasing in $m$. Bound their bases at $m=M$. These enlarged bases may exceed one. For that reason, at each endpoint the checker uses
+\begin{equation}\label{eq:block-retained-powers}
+ \max\{B^{(M-1)/2},B^{(N-1)/2}\},\qquad
+ \max\{L^{M-1},L^{N-1}\},
+\end{equation}
+where $B,L$ denote the respective nonnegative enlarged bases at that endpoint. The corresponding functions of $t$ are convex, being maxima of two convex powers. Applying \eqref{eq:chord-one} to them is therefore valid. An interval contains admissible data only where the preceding monotonicity conditions hold; using positive parts outside that set does not decrease these majorants on admissible data.
+
+For centered integrals, use the four upper coefficients
+$5N/(6d_I)$, $3N/(2d_I)$, $3N(N-1)/2$, and $9N(N-1)/2$, where $d_I$ is the bound in \eqref{eq:box-denominator}. The first two are omitted if $d_I=0$. Their powers are respectively $b^{(M-1)/2}$, $\ell^{M-1}$, $b^{(M-2)/2}$, and $\ell^{M-2}$. The prefactor in $K$ is $(N+1)a_+^3r_+$. For \eqref{eq:absolute-test}, use the endpoint bound $(Vv_+)^{(M+1)/2}$. For \eqref{eq:ratio-test}, use
+$(1+r_+)\{V^{(M+1)/2}(1-r_-^2)^{(M-1)/2}+K_+\}$.
+All bases in these centered powers belong to $[0,1]$; decreasing the exponent therefore enlarges them. Formula~\eqref{eq:block-retained-powers} is the deliberate exception for bases not known to be at most one.
+
+\section{Exact arithmetic and reproducibility}\label{app:arithmetic}
+
+\subsection{Certificates and coverage}
+
+The two JSON files encode the partitions used in Proposition~\ref{prop:finite}. A degree block records the inclusive range $[M,N]$ for $m=n-1$, a positive mesh refinement, and a list of leaf paths with test identifiers. The initial parameter box is \eqref{eq:parameter-box}. Each pair of characters in a path consists of a coordinate index in $\{0,1,2\}$ and a child index in $\{0,1\}$; the corresponding coordinate interval is bisected at its midpoint. The lower and upper children are both closed.
+
+The checker inserts the paths into a tree. It rejects repeated leaves, a leaf with descendants, conflicting split coordinates, and any internal node without both children. It reconstructs all endpoints as exact rational numbers. This proves coverage by induction on the finite tree and ensures that leaf interiors are disjoint. Consecutive degree blocks are checked for both omissions and overlaps. Thus no information produced by the floating-point search is trusted merely because it appears in a certificate.
+
+For a block beginning at $m=M$, set $L=\max\{4,\lceil\log_2M\rceil+2\}$. The mesh first divides $[0,2^{-L}]$ into $q$ equal parts, and then divides each interval $[2^{-j},2^{-j+1}]$, $j=L,\ldots,1$, into $q$ equal parts. The small-degree certificates use $q=32$. The degree-$14$ certificate uses $q=16$, and the other blocks use $q=4$. The checker verifies directly that the resulting rational nodes increase from zero to one. Convex quadrature is precisely \eqref{eq:chord-one}--\eqref{eq:chord-two}, not a floating-point quadrature rule.
+
+\subsection{Arithmetic operations}
+
+Fix $S=2^b$, where the primary run uses $b=100$. A nonnegative integer $U$ represents an upper bound $U/S$. For a nonnegative rational $p/q$, its enclosure is $\lceil Sp/q\rceil$. Multiplication of upper bounds is implemented as
+\begin{equation}\label{eq:rounding}
+ (U,V)\longmapsto\left\lceil\frac{UV}{S}\right\rceil,
+ \qquad
+ \left(\frac pq,U\right)\longmapsto
+ \left\lceil\frac{pU}{q}\right\rceil.
+\end{equation}
+For a square root, choose the smallest integer $K$ such that $K^2\ge US$; then $K/S\ge\sqrt{U/S}$. It is obtained from the integer square root of $US$, with one added unless that product is a perfect square. Integer powers use repeated squaring with \eqref{eq:rounding}; half-integer powers use an integer power and one square root. All operands and denominators are checked for their required signs.
+
+The quantities subtracted in \eqref{eq:signed-test} are treated differently. If $c\ge0$ is a rational lower bound for the positive contribution $a^2K_-L_2$, the checker subtracts $\lfloor Sc\rfloor$, not $\lceil Sc\rceil$, from the upper-bound numerator. Thus directed rounding cannot make the final upper bound artificially small. The exponential factors are bounded through the exact positive Taylor polynomial $T_{32}$ defined after Table~\ref{tab:primitive}; no floating-point exponential or logarithm is used for acceptance.
+
+The invariance of the upper-bound interpretation under these operations follows immediately by induction. A main test is accepted only if its final integer numerator $U$ satisfies $U<S$. The positive integer margins in \eqref{eq:certificate-margins} are therefore strict inequalities, not tolerance estimates. Elementary exclusions are comparisons of exact rational numbers. Timing measurements in the logs are irrelevant to acceptance.
+
+\subsection{Reproduction}
+
+The essential supplementary files are the two certificate files and
+\file{verify_low.py}, \file{verify_mid.py}, and \file{verify_all.py}.
+The first checker treats $4\le n\le13$; the second treats $14\le n\le100000$. The first imports the integer-arithmetic routines and mesh construction of the second, but neither imports a generator. The wrapper invokes both, checks their endpoints, and records the combined result. In a directory containing these files, run
+\begin{verbatim}
+python3 self_test.py
+python3 verify_all.py --bits 100
+python3 verify_all.py --bits 160
+\end{verbatim}
+Only the Python standard library is needed for these commands. The optional generators require NumPy, but are not part of the acceptance procedure.
+
+The certificate files are identified by the following SHA--256 digests; line breaks are not part of the digests.
+\begin{center}\small
+\begin{tabular}{@{}l@{}}
+\file{certificate_n4_to_n13.json}\\
+\texttt{4334dd70fe5317040124115239f92ecc}\\
+\texttt{4e220cbf6c3576407396c3ea9df19f8b}\\[4pt]
+\file{certificate_n14_to_n100000.json}\\
+\texttt{f9131604a764777836afed040bd73b1f}\\
+\texttt{8ca24c5696022460b5547cb509af766d}\\
+\end{tabular}
+\end{center}
+
+For the first certificate the numbers of leaves, in degrees $4$ through $13$, are respectively
+$532,1103,1594,2540,1753,1420,1164,1002,904,809$.
+Ten leaves, five in degree four and five in degree five, invoke Lemma~\ref{lem:near}. All other leaves are checked by the rational or integer tests in Appendix~\ref{app:boxes}.
+
+The complete runs at $100$ and $160$ bits verify the same partitions. They are checks at different precisions, not two independent implementations of the entire proof. Neither run is a proof-assistant formalization of the mathematical lemmas. The supplementary arithmetic self-tests verify elementary identities, selected analytic constants, and rejection of malformed or false certificates; sample tests are not used as replacements for any mathematical argument.
+
+\subsection{Elementary analytic constants}
+
+For completeness, the exponential comparisons in Proposition~\ref{prop:large} can be checked entirely with rational numbers. If $x\ge0$ and $x<k+2$, then
+\begin{equation}\label{eq:exp-series-bounds}
+ \sum_{j=0}^k\frac{x^j}{j!}
+ \le e^x\le
+ \sum_{j=0}^k\frac{x^j}{j!}
+ +\frac{x^{k+1}}{(k+1)!}\frac1{1-x/(k+2)}.
+\end{equation}
+The upper bound follows because the ratios of successive tail terms do not exceed $x/(k+2)$. Formula~\eqref{eq:exp-series-bounds} with $k=20$ verifies all four comparisons in Step~2 of that proposition. It also gives $e<11/4<25/9$, which proves the uniform bounds following \eqref{eq:constants}. The remaining estimates in Proposition~\ref{prop:large} follow from the displayed rational inequalities, $1-u\le e^{-u}$ for $u\ge0$, and $e^x\ge x^6/720$ for $x\ge0$. These are analytic estimates valid throughout the stated range of $m$, not extrapolations of finite checks.
+
+\section*{Data availability}
+The certificates, exact checkers, optional generators, and verification logs are included in the accompanying supplementary archive. The certificates are an essential part of the proof of Proposition~\ref{prop:finite}. No external data or proprietary numerical software are required to reproduce the acceptance checks.
+
+\begin{thebibliography}{KPPSS11}
+
+\bibitem[BD00]{BD00}
+R.~Bhatia and C.~Davis, \emph{A better bound on the variance}, Amer. Math. Monthly \textbf{107} (2000), no.~4, 353--357. \doi{10.1080/00029890.2000.12005203}.
+
+\bibitem[Bor07]{Bor07}
+J.~Borcea, \emph{Equilibrium points of logarithmic potentials induced by positive charge distributions.~I. Generalized de Bruijn--Springer relations}, Trans. Amer. Math. Soc. \textbf{359} (2007), no.~7, 3209--3237. \doi{10.1090/S0002-9947-07-04251-1}. Author version: \arxiv{math/0601519}.
+
+\bibitem[BX99]{BX99}
+J.~E.~Brown and G.~Xiang, \emph{Proof of the Sendov conjecture for polynomials of degree at most eight}, J. Math. Anal. Appl. \textbf{232} (1999), no.~2, 272--292. \doi{10.1006/jmaa.1999.6267}.
+
+\bibitem[Deg14]{Deg14}
+J.~D\'egot, \emph{Sendov conjecture for high degree polynomials}, Proc. Amer. Math. Soc. \textbf{142} (2014), no.~4, 1337--1349. \doi{10.1090/S0002-9939-2014-11888-0}. Author version: \arxiv{1106.4126}.
+
+\bibitem[Hay67]{Hay67}
+W.~K.~Hayman, \emph{Research problems in function theory}, The Athlone Press, University of London, London, 1967.
+
+\bibitem[KPPSS11]{KPPSS11}
+D.~Khavinson, R.~Pereira, M.~Putinar, E.~B.~Saff, and S.~Shimorin, \emph{Borcea's variance conjectures on the critical points of polynomials}, in \emph{Notions of positivity and the geometry of polynomials} (P.~Br\"and\'en, M.~Passare, and M.~Putinar, eds.), Trends Math., Birkh\"auser, Basel, 2011, pp.~283--309. \doi{10.1007/978-3-0348-0142-3_16}. Author version: \arxiv{1010.5167v2}.
+
+\bibitem[Mal05]{Mal05}
+S.~M.~Malamud, \emph{Inverse spectral problem for normal matrices and the Gauss--Lucas theorem}, Trans. Amer. Math. Soc. \textbf{357} (2005), no.~10, 4043--4064. \doi{10.1090/S0002-9947-04-03649-9}. Author version, entitled \emph{Inverse spectral problem for normal matrices and a generalization of the Gauss--Lucas theorem}: \arxiv{math/0304158v3}.
+
+\bibitem[Mar66]{Mar66}
+M.~Marden, \emph{Geometry of polynomials}, 2nd ed., Math. Surveys, vol.~3, American Mathematical Society, Providence, RI, 1966.
+
+\bibitem[Maz26]{Maz26}
+L.~Mazur, \emph{A computer-assisted proof of Sendov's conjecture}, preprint, August~5, 2026, 19~pp. \url{https://www.proofatlas.ai/papers/sendov-conjecture/SENDOV_CONJECTURE_PROOF_AUGUST_5_2026.pdf}.
+
+\bibitem[Per03]{Per03}
+R.~Pereira, \emph{Differentiators and the geometry of polynomials}, J. Math. Anal. Appl. \textbf{285} (2003), no.~1, 336--348. \doi{10.1016/S0022-247X(03)00465-7}.
+
+\bibitem[RS02]{RS02}
+Q.~I.~Rahman and G.~Schmeisser, \emph{Analytic theory of polynomials}, London Math. Soc. Monogr. (N.S.), vol.~26, The Clarendon Press, Oxford University Press, Oxford, 2002.
+
+\bibitem[Sch86]{Sch86}
+I.~J.~Schoenberg, \emph{A conjectured analogue of Rolle's theorem for polynomials with real or complex coefficients}, Amer. Math. Monthly \textbf{93} (1986), no.~1, 8--13. \doi{10.1080/00029890.1986.11971734}.
+
+\bibitem[TZ25]{TZ25}
+Q.~Tang and T.~Zhang, \emph{Sharp Schoenberg type inequalities and the de Bruin--Sharma problem}, \arxiv{2508.10341v3}, December~5, 2025, 57~pp.
+
+\bibitem[Tao22]{Tao22}
+T.~Tao, \emph{Sendov's conjecture for sufficiently-high-degree polynomials}, Acta Math. \textbf{229} (2022), no.~2, 347--392. \doi{10.4310/ACTA.2022.v229.n2.a3}. Author version: \arxiv{2012.04125}.
+
+\bibitem[Tao26]{Tao26}
+T.~Tao, \emph{A digestion of the proof of Sendov's conjecture}, What's New, August~12, 2026. \url{https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/}.
+
+\bibitem[Zha26]{Zha26}
+T.~Zhang, \emph{Beyond Sendov's conjecture: the quadratic Tang--Zhang inequality}, \arxiv{2609.19126v1}, September~16, 2026, 26~pp.
+
+\bibitem[Zha26S]{Zha26S}
+T.~Zhang, \emph{Supplementary code and certificates for Borcea's $2$-variance conjecture}, version September~29, 2026. \url{https://github.com/zhangteng2000/zhangteng2000.github.io/tree/master/files/borcea_variance}.
+
+\end{thebibliography}
+\end{document}

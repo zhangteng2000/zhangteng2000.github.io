@@ -1,0 +1,1238 @@
+{
+  "status": "PASS",
+  "independent_topology": [
+    {
+      "file": "certificate_n4_to_n13.json",
+      "sha256": "4334dd70fe5317040124115239f92ecc4e220cbf6c3576407396c3ea9df19f8b",
+      "blocks": [
+        {
+          "n_min": 4,
+          "n_max": 4,
+          "leaves": 532,
+          "volume": "5",
+          "rules": {
+            "product": 27,
+            "product_radial": 51,
+            "center_coeff": 161,
+            "variance_nonnegative": 8,
+            "moment_A": 20,
+            "finite_radial": 75,
+            "product_root_stable": 4,
+            "center_positive": 134,
+            "near_uniform": 5,
+            "critical_variance_negative": 27,
+            "product_stable": 2,
+            "direct": 1,
+            "moment_B": 8,
+            "product_logcap": 3,
+            "degree_bound": 6
+          }
+        },
+        {
+          "n_min": 5,
+          "n_max": 5,
+          "leaves": 1103,
+          "volume": "5",
+          "rules": {
+            "product": 43,
+            "product_radial": 92,
+            "product_root_stable": 13,
+            "finite_radial": 123,
+            "center_positive": 205,
+            "product_stable": 1,
+            "moment_A": 118,
+            "center_coeff": 281,
+            "variance_nonnegative": 13,
+            "near_uniform": 5,
+            "critical_variance_negative": 46,
+            "product_logcap": 74,
+            "direct": 15,
+            "direct_retained": 32,
+            "moment_B": 34,
+            "degree_bound": 8
+          }
+        },
+        {
+          "n_min": 6,
+          "n_max": 6,
+          "leaves": 1594,
+          "volume": "5",
+          "rules": {
+            "product": 40,
+            "product_radial": 102,
+            "product_root_stable": 28,
+            "finite_radial": 145,
+            "center_positive": 260,
+            "moment_A": 249,
+            "center_coeff": 261,
+            "product_logcap": 201,
+            "direct_retained": 122,
+            "variance_nonnegative": 13,
+            "direct": 93,
+            "center_ratio": 5,
+            "critical_variance_negative": 21,
+            "inverse_moment": 1,
+            "moment_B": 45,
+            "degree_bound": 7,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 7,
+          "n_max": 7,
+          "leaves": 2540,
+          "volume": "5",
+          "rules": {
+            "product": 30,
+            "product_radial": 103,
+            "product_root_stable": 77,
+            "moment_A": 377,
+            "finite_radial": 254,
+            "center_coeff": 182,
+            "center_positive": 569,
+            "direct": 293,
+            "direct_retained": 285,
+            "product_logcap": 276,
+            "variance_nonnegative": 12,
+            "center_ratio": 10,
+            "critical_variance_negative": 17,
+            "moment_B": 52,
+            "inverse_moment": 1,
+            "degree_bound": 2
+          }
+        },
+        {
+          "n_min": 8,
+          "n_max": 8,
+          "leaves": 1753,
+          "volume": "5",
+          "rules": {
+            "product": 37,
+            "product_radial": 64,
+            "product_root_stable": 22,
+            "direct_retained": 330,
+            "direct": 358,
+            "moment_A": 415,
+            "finite_radial": 51,
+            "product_stable": 1,
+            "center_coeff": 85,
+            "center_ratio": 7,
+            "product_logcap": 310,
+            "critical_variance_negative": 12,
+            "variance_nonnegative": 12,
+            "inverse_moment": 2,
+            "moment_B": 36,
+            "degree_bound": 11
+          }
+        },
+        {
+          "n_min": 9,
+          "n_max": 9,
+          "leaves": 1420,
+          "volume": "5",
+          "rules": {
+            "product": 35,
+            "product_radial": 47,
+            "product_logcap": 253,
+            "moment_A": 384,
+            "product_root_stable": 23,
+            "finite_radial": 23,
+            "direct": 298,
+            "center_coeff": 44,
+            "center_ratio": 10,
+            "direct_retained": 244,
+            "critical_variance_negative": 10,
+            "inverse_moment": 2,
+            "variance_nonnegative": 11,
+            "moment_B": 26,
+            "degree_bound": 8,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 10,
+          "n_max": 10,
+          "leaves": 1164,
+          "volume": "5",
+          "rules": {
+            "product": 25,
+            "product_radial": 29,
+            "product_logcap": 189,
+            "moment_A": 331,
+            "product_root_stable": 31,
+            "direct": 249,
+            "finite_radial": 17,
+            "center_coeff": 34,
+            "center_ratio": 6,
+            "direct_retained": 199,
+            "critical_variance_negative": 8,
+            "inverse_moment": 2,
+            "moment_B": 23,
+            "variance_nonnegative": 13,
+            "degree_bound": 5,
+            "beta_negative": 3
+          }
+        },
+        {
+          "n_min": 11,
+          "n_max": 11,
+          "leaves": 1002,
+          "volume": "5",
+          "rules": {
+            "product": 32,
+            "product_radial": 32,
+            "product_logcap": 133,
+            "moment_A": 286,
+            "finite_radial": 9,
+            "direct": 259,
+            "center_coeff": 19,
+            "center_ratio": 6,
+            "direct_retained": 139,
+            "product_root_stable": 33,
+            "critical_variance_negative": 4,
+            "inverse_moment": 2,
+            "moment_B": 22,
+            "variance_nonnegative": 14,
+            "beta_negative": 5,
+            "degree_bound": 7
+          }
+        },
+        {
+          "n_min": 12,
+          "n_max": 12,
+          "leaves": 904,
+          "volume": "5",
+          "rules": {
+            "product": 25,
+            "product_radial": 25,
+            "product_logcap": 106,
+            "moment_A": 248,
+            "product_root_stable": 62,
+            "finite_radial": 7,
+            "direct": 250,
+            "center_coeff": 18,
+            "center_ratio": 7,
+            "direct_retained": 100,
+            "inverse_moment": 3,
+            "moment_B": 30,
+            "variance_nonnegative": 14,
+            "beta_negative": 4,
+            "degree_bound": 5
+          }
+        },
+        {
+          "n_min": 13,
+          "n_max": 13,
+          "leaves": 809,
+          "volume": "5",
+          "rules": {
+            "product": 24,
+            "product_radial": 21,
+            "moment_A": 224,
+            "product_logcap": 76,
+            "product_root_stable": 52,
+            "direct": 241,
+            "finite_radial": 3,
+            "center_coeff": 20,
+            "center_ratio": 7,
+            "direct_retained": 88,
+            "inverse_moment": 2,
+            "moment_B": 30,
+            "variance_nonnegative": 12,
+            "beta_negative": 3,
+            "degree_bound": 6
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "certificate_n14_to_n100000.json",
+      "sha256": "f9131604a764777836afed040bd73b1f8ca24c5696022460b5547cb509af766d",
+      "blocks": [
+        {
+          "n_min": 14,
+          "n_max": 14,
+          "leaves": 2690,
+          "volume": "5",
+          "rules": {
+            "product": 357,
+            "moment_A": 1205,
+            "moment_B": 30,
+            "direct_retained": 651,
+            "direct": 420,
+            "center_ratio": 9,
+            "inverse_moment": 3,
+            "variance_nonnegative": 11,
+            "beta_negative": 3,
+            "degree_bound": 1
+          }
+        },
+        {
+          "n_min": 15,
+          "n_max": 15,
+          "leaves": 2592,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 15,
+            "product": 326,
+            "moment_A": 1093,
+            "direct": 1082,
+            "moment_B": 48,
+            "center_ratio": 9,
+            "variance_nonnegative": 14,
+            "beta_negative": 4,
+            "degree_bound": 1
+          }
+        },
+        {
+          "n_min": 16,
+          "n_max": 16,
+          "leaves": 1553,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 13,
+            "product": 212,
+            "moment_A": 604,
+            "direct": 652,
+            "moment_B": 43,
+            "center_ratio": 7,
+            "variance_nonnegative": 14,
+            "beta_negative": 4,
+            "degree_bound": 4
+          }
+        },
+        {
+          "n_min": 17,
+          "n_max": 17,
+          "leaves": 1144,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 145,
+            "moment_A": 428,
+            "direct": 494,
+            "moment_B": 40,
+            "center_ratio": 5,
+            "variance_nonnegative": 14,
+            "beta_negative": 4,
+            "degree_bound": 2
+          }
+        },
+        {
+          "n_min": 18,
+          "n_max": 18,
+          "leaves": 880,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 101,
+            "moment_A": 324,
+            "direct": 390,
+            "moment_B": 31,
+            "center_ratio": 4,
+            "variance_nonnegative": 13,
+            "beta_negative": 4,
+            "degree_bound": 3
+          }
+        },
+        {
+          "n_min": 19,
+          "n_max": 19,
+          "leaves": 735,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 83,
+            "moment_B": 34,
+            "moment_A": 260,
+            "direct": 330,
+            "center_ratio": 5,
+            "variance_nonnegative": 13,
+            "beta_negative": 4,
+            "degree_bound": 1
+          }
+        },
+        {
+          "n_min": 20,
+          "n_max": 20,
+          "leaves": 691,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 92,
+            "moment_B": 31,
+            "moment_A": 243,
+            "direct": 298,
+            "center_ratio": 5,
+            "variance_nonnegative": 12,
+            "beta_negative": 4,
+            "degree_bound": 1
+          }
+        },
+        {
+          "n_min": 21,
+          "n_max": 21,
+          "leaves": 612,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 80,
+            "moment_A": 197,
+            "direct": 275,
+            "moment_B": 30,
+            "center_ratio": 5,
+            "variance_nonnegative": 12,
+            "beta_negative": 5,
+            "degree_bound": 3
+          }
+        },
+        {
+          "n_min": 22,
+          "n_max": 22,
+          "leaves": 569,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 65,
+            "moment_A": 179,
+            "direct": 266,
+            "moment_B": 32,
+            "center_ratio": 4,
+            "variance_nonnegative": 12,
+            "beta_negative": 5,
+            "degree_bound": 1
+          }
+        },
+        {
+          "n_min": 23,
+          "n_max": 23,
+          "leaves": 515,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 50,
+            "moment_A": 151,
+            "direct": 254,
+            "moment_B": 33,
+            "center_ratio": 4,
+            "variance_nonnegative": 11,
+            "beta_negative": 5,
+            "degree_bound": 2
+          }
+        },
+        {
+          "n_min": 24,
+          "n_max": 24,
+          "leaves": 463,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 46,
+            "moment_A": 130,
+            "direct": 227,
+            "moment_B": 33,
+            "center_ratio": 4,
+            "variance_nonnegative": 11,
+            "beta_negative": 5,
+            "degree_bound": 2
+          }
+        },
+        {
+          "n_min": 25,
+          "n_max": 25,
+          "leaves": 465,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 43,
+            "moment_A": 134,
+            "direct": 229,
+            "moment_B": 36,
+            "center_ratio": 3,
+            "variance_nonnegative": 10,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 26,
+          "n_max": 26,
+          "leaves": 440,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 5,
+            "product": 37,
+            "moment_A": 126,
+            "direct": 221,
+            "moment_B": 33,
+            "center_ratio": 3,
+            "variance_nonnegative": 10,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 27,
+          "n_max": 27,
+          "leaves": 408,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 33,
+            "moment_A": 118,
+            "direct": 205,
+            "moment_B": 33,
+            "center_ratio": 3,
+            "variance_nonnegative": 9,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 28,
+          "n_max": 28,
+          "leaves": 378,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 29,
+            "moment_A": 105,
+            "direct": 195,
+            "center_ratio": 3,
+            "moment_B": 31,
+            "variance_nonnegative": 8,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 29,
+          "n_max": 29,
+          "leaves": 361,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 28,
+            "moment_A": 98,
+            "direct": 186,
+            "center_ratio": 3,
+            "moment_B": 31,
+            "variance_nonnegative": 8,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 30,
+          "n_max": 30,
+          "leaves": 339,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 27,
+            "moment_A": 86,
+            "direct": 176,
+            "center_ratio": 4,
+            "moment_B": 31,
+            "variance_nonnegative": 8,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 31,
+          "n_max": 33,
+          "leaves": 403,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 47,
+            "moment_B": 32,
+            "moment_A": 107,
+            "direct": 198,
+            "center_ratio": 4,
+            "variance_nonnegative": 8,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 34,
+          "n_max": 36,
+          "leaves": 337,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 36,
+            "moment_B": 28,
+            "moment_A": 86,
+            "direct": 168,
+            "center_ratio": 5,
+            "variance_nonnegative": 7,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 37,
+          "n_max": 40,
+          "leaves": 334,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 31,
+            "moment_B": 28,
+            "moment_A": 87,
+            "direct": 170,
+            "center_ratio": 5,
+            "variance_nonnegative": 6,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 41,
+          "n_max": 44,
+          "leaves": 292,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 25,
+            "moment_B": 26,
+            "moment_A": 75,
+            "direct": 149,
+            "center_ratio": 5,
+            "variance_nonnegative": 5,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 45,
+          "n_max": 48,
+          "leaves": 256,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 26,
+            "moment_B": 23,
+            "moment_A": 64,
+            "direct": 127,
+            "center_ratio": 5,
+            "variance_nonnegative": 4,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 49,
+          "n_max": 53,
+          "leaves": 245,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 25,
+            "moment_B": 21,
+            "moment_A": 62,
+            "direct": 122,
+            "center_ratio": 4,
+            "variance_nonnegative": 4,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 54,
+          "n_max": 58,
+          "leaves": 216,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 17,
+            "moment_B": 19,
+            "moment_A": 54,
+            "direct": 113,
+            "center_ratio": 2,
+            "variance_nonnegative": 4,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 59,
+          "n_max": 63,
+          "leaves": 202,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 16,
+            "moment_B": 17,
+            "moment_A": 53,
+            "direct": 104,
+            "center_ratio": 2,
+            "variance_nonnegative": 3,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 64,
+          "n_max": 69,
+          "leaves": 187,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 14,
+            "moment_B": 15,
+            "moment_A": 49,
+            "direct": 96,
+            "center_ratio": 3,
+            "variance_nonnegative": 3,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 70,
+          "n_max": 75,
+          "leaves": 169,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 11,
+            "moment_B": 11,
+            "moment_A": 47,
+            "direct": 87,
+            "center_ratio": 3,
+            "variance_nonnegative": 3,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 76,
+          "n_max": 82,
+          "leaves": 158,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 2,
+            "product": 10,
+            "moment_B": 9,
+            "moment_A": 43,
+            "direct": 83,
+            "center_ratio": 3,
+            "variance_nonnegative": 3,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 83,
+          "n_max": 89,
+          "leaves": 163,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 7,
+            "product": 19,
+            "moment_A": 43,
+            "direct": 78,
+            "moment_B": 6,
+            "center_ratio": 3,
+            "variance_nonnegative": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 90,
+          "n_max": 97,
+          "leaves": 152,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 7,
+            "product": 15,
+            "moment_A": 39,
+            "direct": 75,
+            "moment_B": 6,
+            "center_ratio": 3,
+            "variance_nonnegative": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 98,
+          "n_max": 106,
+          "leaves": 146,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 6,
+            "product": 12,
+            "moment_A": 37,
+            "direct": 76,
+            "moment_B": 6,
+            "center_ratio": 2,
+            "variance_nonnegative": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 107,
+          "n_max": 133,
+          "leaves": 158,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 7,
+            "product": 13,
+            "moment_A": 42,
+            "direct": 80,
+            "moment_B": 6,
+            "center_ratio": 3,
+            "variance_nonnegative": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 134,
+          "n_max": 167,
+          "leaves": 149,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 9,
+            "product": 14,
+            "moment_A": 41,
+            "direct": 72,
+            "moment_B": 5,
+            "center_ratio": 2,
+            "variance_nonnegative": 1,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 168,
+          "n_max": 209,
+          "leaves": 119,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 7,
+            "product": 10,
+            "moment_A": 30,
+            "direct": 61,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 210,
+          "n_max": 262,
+          "leaves": 109,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 6,
+            "product": 6,
+            "moment_A": 32,
+            "direct": 54,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 263,
+          "n_max": 328,
+          "leaves": 107,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 6,
+            "product": 7,
+            "moment_A": 33,
+            "direct": 50,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 5
+          }
+        },
+        {
+          "n_min": 329,
+          "n_max": 411,
+          "leaves": 92,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 6,
+            "product": 4,
+            "moment_A": 28,
+            "direct": 45,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 3
+          }
+        },
+        {
+          "n_min": 412,
+          "n_max": 514,
+          "leaves": 92,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 5,
+            "moment_A": 26,
+            "direct": 41,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 515,
+          "n_max": 643,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 4,
+            "moment_A": 24,
+            "direct": 37,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 644,
+          "n_max": 804,
+          "leaves": 79,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 3,
+            "moment_A": 21,
+            "direct": 37,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 805,
+          "n_max": 1006,
+          "leaves": 85,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 11,
+            "product": 3,
+            "moment_A": 24,
+            "direct": 39,
+            "moment_B": 4,
+            "center_ratio": 2,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 1007,
+          "n_max": 1258,
+          "leaves": 82,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 11,
+            "product": 3,
+            "moment_A": 24,
+            "direct": 37,
+            "moment_B": 4,
+            "center_ratio": 1,
+            "beta_negative": 2
+          }
+        },
+        {
+          "n_min": 1259,
+          "n_max": 1573,
+          "leaves": 84,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 13,
+            "product": 1,
+            "moment_A": 25,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 1574,
+          "n_max": 1967,
+          "leaves": 73,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 9,
+            "product": 1,
+            "moment_A": 20,
+            "direct": 38,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 1968,
+          "n_max": 2459,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 13,
+            "product": 4,
+            "moment_A": 23,
+            "direct": 38,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 2460,
+          "n_max": 3074,
+          "leaves": 81,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 4,
+            "moment_A": 21,
+            "direct": 39,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 3075,
+          "n_max": 3843,
+          "leaves": 77,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 3,
+            "moment_A": 21,
+            "direct": 38,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 3844,
+          "n_max": 4804,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 24,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 4805,
+          "n_max": 6006,
+          "leaves": 82,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 24,
+            "direct": 39,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 6007,
+          "n_max": 7508,
+          "leaves": 75,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 1,
+            "moment_A": 20,
+            "direct": 39,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 7509,
+          "n_max": 9386,
+          "leaves": 72,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 9,
+            "product": 1,
+            "moment_A": 20,
+            "direct": 37,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 9387,
+          "n_max": 11733,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 13,
+            "product": 3,
+            "moment_A": 23,
+            "direct": 39,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 11734,
+          "n_max": 14667,
+          "leaves": 79,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 11,
+            "product": 2,
+            "moment_A": 23,
+            "direct": 38,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 14668,
+          "n_max": 18334,
+          "leaves": 79,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 11,
+            "product": 2,
+            "moment_A": 23,
+            "direct": 38,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 18335,
+          "n_max": 22918,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 24,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 22919,
+          "n_max": 28648,
+          "leaves": 81,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 22,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 28649,
+          "n_max": 35811,
+          "leaves": 77,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 1,
+            "moment_A": 21,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 35812,
+          "n_max": 44764,
+          "leaves": 77,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 10,
+            "product": 1,
+            "moment_A": 21,
+            "direct": 40,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 44765,
+          "n_max": 55956,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 23,
+            "direct": 41,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 55957,
+          "n_max": 69946,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 23,
+            "direct": 41,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 69947,
+          "n_max": 87433,
+          "leaves": 83,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 23,
+            "direct": 41,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        },
+        {
+          "n_min": 87434,
+          "n_max": 100000,
+          "leaves": 82,
+          "volume": "5",
+          "rules": {
+            "inverse_moment": 12,
+            "product": 2,
+            "moment_A": 22,
+            "direct": 41,
+            "moment_B": 3,
+            "center_ratio": 1,
+            "beta_negative": 1
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "diagnostics": {
+    "status": "PASS",
+    "exact_sample_checks": 3036,
+    "note": "Sample diagnostics are not proofs of universal inequalities."
+  },
+  "scope": "Independent coverage audit and exact auxiliary diagnostics; not an independent arithmetic replay of every leaf."
+}

@@ -1,0 +1,26 @@
+{
+  "precision_bits": 100,
+  "blocks": 62,
+  "leaves": 20850,
+  "tests": {
+    "product": 2170,
+    "moment_A": 7098,
+    "moment_B": 934,
+    "direct_retained": 651,
+    "direct": 8886,
+    "center_ratio": 171,
+    "inverse_moment": 465,
+    "variance_nonnegative": 249,
+    "beta_negative": 205,
+    "degree_bound": 21
+  },
+  "maximum_depth": 33,
+  "maximum_main_bound_integer": "1267647190230369110022589789016",
+  "status": "PASS",
+  "minimum_degree": 14,
+  "maximum_degree": 100000,
+  "scale": "1267650600228229401496703205376",
+  "minimum_main_margin_numerator": "3409997860291474113416360",
+  "sha256": "f9131604a764777836afed040bd73b1f8ca24c5696022460b5547cb509af766d",
+  "elapsed_seconds_reporting_only": 11.32446350399914
+}

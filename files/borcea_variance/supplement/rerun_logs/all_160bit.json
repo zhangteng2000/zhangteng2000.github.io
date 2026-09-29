@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "precision_bits": 160,
+  "minimum_degree": 4,
+  "maximum_degree": 100000,
+  "degree_blocks": 72,
+  "leaf_boxes": 33671,
+  "scope": "Exact finite inequalities and coverage; human lemmas and infinite tail are documented separately."
+}
