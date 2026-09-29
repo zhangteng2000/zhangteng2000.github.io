@@ -1,2 +1,0 @@
-PASS: independent sorted-address coverage audit; 72 blocks, 33671 leaves.
-PASS: exact rational auxiliary diagnostics. Full report: independent_checks.json

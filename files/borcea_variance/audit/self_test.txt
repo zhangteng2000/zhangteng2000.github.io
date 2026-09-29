@@ -1,1 +1,0 @@
-PASS: exact arithmetic, chord weights, analytic constants, sample symmetric products, and malformed/false-certificate rejection tests

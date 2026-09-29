@@ -13,4 +13,4 @@ author_profile: true
 
 - [Weighted weak majorization](/files/weighted_weak_majorization.pdf)
 
-- [Borcea's 2-variance conjecture](/files/borcea_variance/borcea_variance.pdf)
+- [Borcea's 2-variance conjecture](/files/borcea_variance.pdf)
