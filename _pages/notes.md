@@ -12,5 +12,3 @@ author_profile: true
 - [Baernstein Conjecture](/files/Baernstein%20Conjecture.pdf)
 
 - [Weighted weak majorization](/files/weighted_weak_majorization.pdf)
-
-- [Borcea's 2-variance conjecture](/files/borcea_variance.pdf)
