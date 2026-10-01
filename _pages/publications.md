@@ -21,7 +21,26 @@ author_profile: true
   </a>
   <br>
   <strong>Description:</strong>
-  This paper establishes a quantitative strengthening of Sendov's conjecture, namely the quadratic Tang--Zhang inequality
+  This paper establishes a quantitative strengthening of Sendov's conjecture, namely the quadratic Tang--Zhang inequality.
+</li>
+
+<br>
+
+<li>
+  <em>
+    Borcea's 2-Variance Conjecture
+  </em>,
+  preprint.
+  <a
+    href="/files/Borcea_2_variance_conjecture.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    PDF
+  </a>
+  <br>
+  <strong>Description:</strong>
+  This paper proves Borcea's 2-variance conjecture.
 </li>
 
 <br>
