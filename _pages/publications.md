@@ -21,7 +21,8 @@ author_profile: true
   </a>
   <br>
   <strong>Description:</strong>
-  This paper establishes a quantitative strengthening of Sendov's conjecture, namely the quadratic Tang--Zhang inequality.
+  This paper establishes a quantitative strengthening of Sendov's conjecture,
+  namely the quadratic Tang--Zhang inequality.
 </li>
 
 <br>
@@ -62,4 +63,25 @@ author_profile: true
   <strong>Description:</strong>
   This paper proves Sendov's conjecture for every degree
   n &ge; 10<sup>200000</sup>.
+</li>
+
+<br>
+
+<li>
+  <em>
+    Nonscalar Non-Commutators in Elementary Linear Groups
+  </em>,
+  preprint.
+  <a
+    href="/files/MA7n.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    PDF
+  </a>
+  <br>
+  <strong>Description:</strong>
+  This paper answers a question of Vaserstein by constructing nonscalar
+  elements in elementary linear groups that are not single commutators,
+  including both noncommutative and commutative examples.
 </li>
