@@ -71,7 +71,7 @@ author_profile: true
   <em>
     Nonscalar Non-Commutators in Elementary Linear Groups
   </em>
-  (with J. Lin),
+  (with J. Lei),
   preprint.
   <a
     href="/files/MA7n.pdf"
