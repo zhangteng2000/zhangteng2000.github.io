@@ -70,7 +70,8 @@ author_profile: true
 <li>
   <em>
     Nonscalar Non-Commutators in Elementary Linear Groups
-  </em>,
+  </em>
+  (with J. Lin),
   preprint.
   <a
     href="/files/MA7n.pdf"
@@ -81,7 +82,8 @@ author_profile: true
   </a>
   <br>
   <strong>Description:</strong>
-  This paper answers a question of Vaserstein by constructing nonscalar
-  elements in elementary linear groups that are not single commutators,
-  including both noncommutative and commutative examples.
+  This paper answers a question of Vaserstein by proving the existence of
+  nonscalar elements in elementary linear groups that are not single
+  commutators, with constructions over both noncommutative and commutative
+  rings.
 </li>
