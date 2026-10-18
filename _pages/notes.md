@@ -11,6 +11,9 @@ author_profile: true
 
 - [Gaussian Decay and Backward Uniqueness on Domains with Connected Boundary](/files/A_counterexample_of_Heat_equation.pdf)
 
-- [A sharp lower bound for permanents](/files/A_sharp_lower_bound_for_permanents.pdf)
+- [A sharp lower bound for permanents](/files/A_sharp_lower_bound_for_permanents.pdf) ([alternative version](/files/A_sharp_lower_bound_for_permanents_final.pdf))
 
 - [Weighted weak majorization](/files/weighted_weak_majorization.pdf)
+
+- [A streamlined proof of Kadison’s problem](/files/A_streamlined_proof_of_Kadison_problem.pdf)
+
