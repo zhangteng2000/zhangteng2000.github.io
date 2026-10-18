@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <p><strong>Last updated:</strong> October 18, 2026.</p>
-<p><a href="#complex-analysis">Complex Analysis</a> · <a href="#operator-algebra">Operator Algebra</a> · <a href="#matrix-analysis">Matrix Analysis</a> · <a href="#group-theory">Group Theory</a></p>
+<p><a href="#complex-analysis">Complex Analysis</a> · <a href="#operator-algebra">Operator Algebra</a> · <a href="#matrix-analysis">Matrix Analysis</a> · <a href="#group-theory">Group Theory</a> · <a href="/notes/">Notes</a></p>
 <h2 id="complex-analysis">Complex Analysis</h2>
 <h3>Published and Accepted Articles</h3>
 <ol>
@@ -64,7 +64,6 @@ author_profile: true
   preprint, 2026,
   <a href="https://arxiv.org/abs/2610.02035" rel="noopener noreferrer" target="_blank">arXiv:2610.02035</a>.
   [<a href="https://arxiv.org/pdf/2610.02035" rel="noopener noreferrer" target="_blank">PDF</a>]
-  [<a href="/files/Borcea_2_variance_conjecture.pdf" rel="noopener noreferrer" target="_blank">Local PDF</a>]
 </li>
 <li>
   T. Zhang,
@@ -72,7 +71,6 @@ author_profile: true
   preprint, 2026,
   <a href="https://arxiv.org/abs/2610.02009" rel="noopener noreferrer" target="_blank">arXiv:2610.02009</a>.
   [<a href="https://arxiv.org/pdf/2610.02009" rel="noopener noreferrer" target="_blank">PDF</a>]
-  [<a href="/files/Baernstein%20Conjecture.pdf" rel="noopener noreferrer" target="_blank">Local PDF</a>]
 </li>
 <li>
   A. Eremenko and T. Zhang,
@@ -145,22 +143,11 @@ author_profile: true
   [<a href="https://arxiv.org/pdf/2508.10341" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 </ol>
-<h3>Additional Manuscripts and Notes</h3>
-<ol>
-<li><em>Heat equation counterexample</em>, manuscript PDF, 2026.
-[<a href="/files/A_counterexample_of_Heat_equation.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li>
-</ol>
+
+
 <h2 id="operator-algebra">Operator Algebra</h2>
 <h3>Published and Accepted Articles</h3>
 <ol><li>
-T. Zhang,
-<em>A counterexample to the Huang–Tam conjecture and Frobenius bounds for self-commutators under λ-Aluthge transforms</em>,
-<cite>Proc. Amer. Math. Soc.</cite> (2026), published electronically September 3, 2026.
-[<a href="https://doi.org/10.1090/proc/17896" rel="noopener noreferrer" target="_blank">DOI</a>]
- [<a href="https://arxiv.org/abs/2603.04655" rel="noopener noreferrer" target="_blank">arXiv</a>]
- [<a href="https://arxiv.org/pdf/2603.04655" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li><li>
 T. Zhang,
 <em>Bourin-type inequalities for τ-measurable operators in fully symmetric spaces</em>,
 <cite>Acta Math. Sci. Ser. B (Engl. Ed.)</cite> (to appear).
@@ -177,12 +164,6 @@ T. Zhang,
 <h3>Preprints</h3>
 <ol>
 <li>
-  L. Molnár and T. Zhang,
-  <em>Kadison’s theorem on linear order isomorphisms of C<sup>*</sup>-algebras holds without the additivity assumption</em>,
-  manuscript, 2026.
-  [<a href="/files/Kadison_vegleges_1.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li>
-<li>
   Z. Xu and T. Zhang,
   <em>Sharp tangent inequalities in noncommutative L<sub>p</sub>-spaces</em>,
   preprint, 2026,
@@ -195,7 +176,6 @@ T. Zhang,
   preprint, 2026,
   <a href="https://arxiv.org/abs/2608.18405" rel="noopener noreferrer" target="_blank">arXiv:2608.18405</a>.
   [<a href="https://arxiv.org/pdf/2608.18405" rel="noopener noreferrer" target="_blank">PDF</a>]
-  [<a href="/files/Kadison_problem_13_nonseparable_case.pdf" rel="noopener noreferrer" target="_blank">Local PDF</a>]
 </li>
 <li>
   T. Zhang,
@@ -218,13 +198,18 @@ T. Zhang,
   <a href="https://arxiv.org/abs/2605.15006" rel="noopener noreferrer" target="_blank">arXiv:2605.15006</a>.
   [<a href="https://arxiv.org/pdf/2605.15006" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
-
 <li>
   L. Molnár and T. Zhang,
   <em>On interrelations among different versions of a Heron type mean and commutativity in C*-algebras</em>,
   preprint, 2026,
   <a href="https://arxiv.org/abs/2602.14123" rel="noopener noreferrer" target="_blank">arXiv:2602.14123</a>.
   [<a href="https://arxiv.org/pdf/2602.14123" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+  <li>
+  L. Molnár and T. Zhang,
+  <em>Kadison’s theorem on linear order isomorphisms of C<sup>*</sup>-algebras holds without the additivity assumption</em>,
+  manuscript, 2026.
+  [<a href="/files/Kadison_vegleges_1.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 <li>
   T. Zhang,
@@ -240,7 +225,6 @@ T. Zhang,
   <a href="https://arxiv.org/abs/2602.08164" rel="noopener noreferrer" target="_blank">arXiv:2602.08164</a>.
   [<a href="https://arxiv.org/pdf/2602.08164" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
-
 <li>
   T. Zhang,
   <em>Clarkson–McCarthy type inequalities, Part I: ℓ<sub>p</sub>–ℓ<sub>p</sub> and ℓ<sub>q</sub>–ℓ<sub>p</sub> Schatten <i>p</i>-estimates</em>,
@@ -249,12 +233,8 @@ T. Zhang,
   [<a href="https://arxiv.org/pdf/2410.21961" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 </ol>
-<h3>Additional Manuscripts and Notes</h3>
-<ol>
-<li><em>A streamlined proof of Kadison’s problem</em>, related note, 2026.
-[<a href="/files/A_streamlined_proof_of_Kadison_problem.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li>
-</ol>
+
+
 <h2 id="matrix-analysis">Matrix Analysis</h2>
 <h3>Published and Accepted Articles</h3>
 <ol><li>
@@ -278,6 +258,14 @@ T. Zhang,
       [<a href="https://arxiv.org/abs/2601.10602" rel="noopener noreferrer" target="_blank">arXiv</a>]
        [<a href="https://arxiv.org/pdf/2601.10602" rel="noopener noreferrer" target="_blank">PDF</a>]
       </li>
+  <li>
+T. Zhang,
+<em>A counterexample to the Huang–Tam conjecture and Frobenius bounds for self-commutators under λ-Aluthge transforms</em>,
+<cite>Proc. Amer. Math. Soc.</cite> (2026), published electronically September 3, 2026.
+[<a href="https://doi.org/10.1090/proc/17896" rel="noopener noreferrer" target="_blank">DOI</a>]
+ [<a href="https://arxiv.org/abs/2603.04655" rel="noopener noreferrer" target="_blank">arXiv</a>]
+ [<a href="https://arxiv.org/pdf/2603.04655" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
 <li>
       T. Zhang,
       <em>Weak majorization inequalities for the cubic and quartic coefficients of <i>e</i><sup>(A+B)t</sup> versus <i>e</i><sup>At</sup><i>e</i><sup>Bt</sup></em>,
@@ -337,7 +325,6 @@ T. Zhang,
   <a href="https://arxiv.org/abs/2609.20306" rel="noopener noreferrer" target="_blank">arXiv:2609.20306</a>.
   [<a href="https://arxiv.org/pdf/2609.20306" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
-
 <li>
   T. Zhang,
   <em>Plank theorems, Gaussian probabilistic estimates and Rump's 100 Euro conjecture</em>,
@@ -352,7 +339,6 @@ T. Zhang,
   <a href="https://arxiv.org/abs/2602.01463" rel="noopener noreferrer" target="_blank">arXiv:2602.01463</a>.
   [<a href="https://arxiv.org/pdf/2602.01463" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
-
 <li>
   Z. Xu and T. Zhang,
   <em>Sharp perturbation bounds on the Frobenius norm of subunitary and positive polar factor</em>,
@@ -361,13 +347,8 @@ T. Zhang,
   [<a href="https://arxiv.org/pdf/2507.14940" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 </ol>
-<h3>Additional Manuscripts and Notes</h3>
-<ol>
-<li><em>A sharp lower bound for permanents</em>, manuscript PDF, 2026.
-[<a href="/files/A_sharp_lower_bound_for_permanents.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
- [<a href="/files/A_sharp_lower_bound_for_permanents_final.pdf" rel="noopener noreferrer" target="_blank">Other version</a>]
-</li>
-</ol>
+
+
 <h2 id="group-theory">Group Theory</h2><h3>Preprints</h3><ol>
 <li>
 J. Lei and T. Zhang,
