@@ -19,7 +19,9 @@ redirect_from:
     <p>My research interests lie in <strong>complex analysis, operator algebras, and matrix analysis</strong>. My <a href="/publications/">research page</a> lists my publications and preprints, and my <a href="/notes/">notes page</a> contains further research notes.</p>
     <p class="contact">Email: <a href="mailto:teng.zhang@stu.xjtu.edu.cn">teng.zhang@stu.xjtu.edu.cn</a></p>
     <p class="downloads"><a href="/files/Teng_Zhang_CV.pdf">CV (PDF)</a><span class="download-separator" aria-hidden="true">·</span><a href="https://scholar.google.com/citations?user=HKf3_tEAAAAJ&amp;hl=en">Google Scholar</a></p>
-    <p class="featured-talk">For a wonderful talk on the <strong>Lei–Zhang Entropy Theorem</strong> and its connection to the Krzyż conjecture, see <a href="https://ottermathtalks.github.io/talks/">John E. McCarthy's OTTER talk</a> (<a href="/files/LeiZhang_Krzyz.pdf">Slides, PDF</a>).</p>
+    <p class="collaborators">My collaborators include <a href="https://www.math.purdue.edu/~eremenko/">Alexandre Eremenko</a>, <a href="https://faculty.xjtu.edu.cn/zbxu/en/index.htm">Zongben Xu</a>, <a href="https://www.math.u-szeged.hu/~molnarl/">Lajos Molnár</a>, and <a href="https://sites.google.com/view/jialin-lei/home">Jialin Lei</a>.</p>
+    <p class="featured-talk">For a wonderful talk on the <strong>Lei–Zhang Entropy Theorem</strong> and its connection to the Krzyż conjecture, see <a href="https://www.math.washu.edu/~mccarthy/">John E. McCarthy</a>'s <a href="https://ottermathtalks.github.io/talks/">OTTER talk</a> (<a href="/files/LeiZhang_Krzyz.pdf">Slides, PDF</a>).</p>
+    <p class="research-highlight">I also solved <a href="https://www.tuhh.de/ti3/rump/">Siegfried M. Rump</a>'s <a href="https://www.tuhh.de/ti3/rump/100EuroProblem.pdf#page=1">100 € problem</a>.</p>
   </div>
 </section>
 
