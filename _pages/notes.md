@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: academic
 title: "Notes"
 permalink: /notes/
 author_profile: true

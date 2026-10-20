@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% unless page.home %}{{ page.title | escape }} · {% endunless %}Teng Zhang</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  <meta name="theme-color" content="#264862">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="{{ '/' | relative_url }}">Teng Zhang</a>
+      <nav aria-label="Main navigation">
+        <ul class="navigation">
+        {% for item in site.data.navigation.main %}
+          <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="content{% if page.home %} home-content{% endif %}">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>© {{ site.time | date: '%Y' }} Teng Zhang <span aria-hidden="true">·</span> Updated {{ site.time | date: '%-d %B %Y' }}</p>
+  </footer>
+</body>
+</html>
