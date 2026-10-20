@@ -1,6 +1,6 @@
 ---
 layout: academic
-title: 'Teng Zhang <span class="chinese-name" lang="zh">张腾</span>'
+title: "Teng Zhang 张腾"
 permalink: /
 home: true
 description: "Teng Zhang — Ph.D. student in mathematics at Xi'an Jiaotong University and joint Ph.D. student at the University of Szeged."
@@ -9,17 +9,21 @@ redirect_from:
   - /about.html
 ---
 
-<p class="subtitle">Ph.D. Student · Mathematics</p>
+<section class="profile-hero" aria-label="About Teng Zhang">
+  <img class="profile-photo" src="/images/teng-zhang-jinxianguan.jpg" alt="Teng Zhang at Jinxianguan" width="3024" height="4032" decoding="async" fetchpriority="high">
+  <div class="profile-intro">
+    <h1>Teng Zhang <span class="chinese-name" lang="zh">张腾</span></h1>
+    <p class="subtitle">Ph.D. Student · Mathematics</p>
+    <p>I am a Ph.D. student at the <a href="https://math.xjtu.edu.cn/">School of Mathematics and Statistics</a>, <a href="https://www.xjtu.edu.cn/">Xi'an Jiaotong University</a>, China, under the supervision of <a href="https://faculty.xjtu.edu.cn/zbxu/en/index.htm">Prof. Zongben Xu</a>. I also previously studied under the guidance of Prof. Minghua Lin.</p>
+    <p>I am currently a joint Ph.D. student at the <a href="https://www.math.u-szeged.hu/analysis/">Department of Analysis, Bolyai Institute</a>, <a href="https://u-szeged.hu/">University of Szeged</a>, Hungary, under the supervision of <a href="https://www.math.u-szeged.hu/~molnarl/">Prof. Lajos Molnár</a>.</p>
+    <p>My research interests lie in <strong>complex analysis, operator algebras, and matrix analysis</strong>. My <a href="/publications/">research page</a> lists my publications and preprints, and my <a href="/notes/">notes page</a> contains further research notes.</p>
+    <p class="contact">Email: <a href="mailto:teng.zhang@stu.xjtu.edu.cn">teng.zhang@stu.xjtu.edu.cn</a></p>
+    <p class="downloads"><a href="/files/Teng_Zhang_CV.pdf">CV (PDF)</a><span class="download-separator" aria-hidden="true">·</span><a href="https://scholar.google.com/citations?user=HKf3_tEAAAAJ&amp;hl=en">Google Scholar</a></p>
+    <p class="featured-talk">For a wonderful talk on the <strong>Lei–Zhang Entropy Theorem</strong> and its connection to the Krzyż conjecture, see <a href="https://ottermathtalks.github.io/talks/">John E. McCarthy's OTTER talk</a> (<a href="/files/LeiZhang_Krzyz.pdf">Slides, PDF</a>).</p>
+  </div>
+</section>
 
-I am a Ph.D. student at the [School of Mathematics and Statistics](https://math.xjtu.edu.cn/), [Xi'an Jiaotong University](https://www.xjtu.edu.cn/), China, under the supervision of [Prof. Zongben Xu](https://faculty.xjtu.edu.cn/zbxu/en/index.htm). I also previously studied under the guidance of Prof. Minghua Lin.
-
-I am currently a joint Ph.D. student at the [Department of Analysis, Bolyai Institute](https://www.math.u-szeged.hu/analysis/), [University of Szeged](https://u-szeged.hu/), Hungary, under the supervision of [Prof. Lajos Molnár](https://www.math.u-szeged.hu/~molnarl/).
-
-My research interests lie in **complex analysis, operator algebras, and matrix analysis**. My [research page](/publications/) lists my publications and preprints, and my [notes page](/notes/) contains further research notes.
-
-<p class="contact">Email: <a href="mailto:teng.zhang@stu.xjtu.edu.cn">teng.zhang@stu.xjtu.edu.cn</a></p>
-
-<p class="downloads"><a href="/files/Teng_Zhang_CV.pdf">CV (PDF)</a><span class="download-separator" aria-hidden="true">·</span><a href="/files/Teng_Zhang_CV.tex" download>TeX source</a><span class="download-separator" aria-hidden="true">·</span><a href="https://scholar.google.com/citations?user=HKf3_tEAAAAJ&amp;hl=en">Google Scholar</a></p>
+<div class="home-details" markdown="1">
 
 ## Education
 
@@ -34,3 +38,5 @@ My research interests lie in **complex analysis, operator algebras, and matrix a
 - **B.S. in Mathematics**, Taiyuan University of Technology, Taiyuan, China<br>
   <span class="date">September 2017–July 2021</span><br>
   School of Mathematics
+
+</div>
