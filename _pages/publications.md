@@ -5,7 +5,7 @@ layout: academic
 author_profile: true
 ---
 
-<p><strong>Last updated:</strong> October 18, 2026.</p>
+<p><strong>Last updated:</strong> October 20, 2026.</p>
 <p><a href="#complex-analysis">Complex Analysis</a> · <a href="#operator-algebra">Operator Algebra</a> · <a href="#matrix-analysis">Matrix Analysis</a> · <a href="#group-theory">Group Theory</a> · <a href="/notes/">Notes</a></p>
 <h2 id="complex-analysis">Complex Analysis</h2>
 <h3>Published and Accepted Articles</h3>
@@ -237,7 +237,14 @@ T. Zhang,
 
 <h2 id="matrix-analysis">Matrix Analysis</h2>
 <h3>Published and Accepted Articles</h3>
-<ol><li>
+<ol>
+<li>
+  Jean-Christophe Bourin and Teng Zhang,
+  <strong>Matrix triangle inequalities: past, present, and future</strong>,
+  <cite>Reviews in Mathematical Physics</cite> (to appear).
+  [<a href="/files/Bourin_Zhang_Matrix_Triangle_Inequalities.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
 T. Zhang,
 <strong>Johnson's determinantal identity for contiguous minors of Toeplitz matrices, with an accretive extension</strong>,
 <cite>J. Algebra</cite> <strong>711</strong> (2027), 14–25.
