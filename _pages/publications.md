@@ -239,9 +239,9 @@ T. Zhang,
 <h3>Published and Accepted Articles</h3>
 <ol>
 <li>
-  Jean-Christophe Bourin and Teng Zhang,
+  J.-C. Bourin and T. Zhang,
   <strong>Matrix triangle inequalities: past, present, and future</strong>,
-  <cite>Reviews in Mathematical Physics</cite> (to appear).
+  <cite>Rev. Math. Phys.</cite> (to appear).
   [<a href="/files/Bourin_Zhang_Matrix_Triangle_Inequalities.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 <li>
