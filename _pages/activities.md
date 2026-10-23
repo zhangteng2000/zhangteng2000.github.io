@@ -10,6 +10,11 @@ permalink: /activities/
 <strong>A Proof of Sendov's Conjecture and Related Extremal Problems</strong><br>
 Online (Tencent Meeting) · <a href="/files/Sendov_PPT_Talk.pdf">Slides, PDF</a></p>
 
+<figure class="talk-poster">
+  <a href="/images/sendov-talk-poster.jpg"><img src="/images/sendov-talk-poster.jpg" alt="Poster for Teng Zhang's talk on Sendov's conjecture" loading="lazy"></a>
+  <figcaption>Talk poster · October 23, 2026</figcaption>
+</figure>
+
 <p class="talk-entry"><strong>July 2, 2026</strong><br>
 Kadison's Theorem on Linear Order Isomorphisms of C<sup>*</sup>-Algebras Holds Without the Additivity Assumption<br>
 <a href="https://www.math.u-szeged.hu/CSM/CSM2026/program.php#second-title">The 8th Conference of PhD Students in Mathematics</a>, University of Szeged, Szeged, Hungary</p>
