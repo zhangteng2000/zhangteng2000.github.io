@@ -8,12 +8,7 @@ permalink: /activities/
 
 <p class="talk-entry"><strong>October 23, 2026</strong><br>
 <strong>A Proof of Sendov's Conjecture and Related Extremal Problems</strong><br>
-Online (Tencent Meeting) · <a href="/files/Sendov_PPT_Talk.pdf">Slides, PDF</a></p>
-
-<figure class="talk-poster">
-  <a href="/images/sendov-talk-poster.jpg"><img src="/images/sendov-talk-poster.jpg" alt="Poster for Teng Zhang's talk on Sendov's conjecture" loading="lazy"></a>
-  <figcaption>Talk poster · October 23, 2026</figcaption>
-</figure>
+Online (Tencent Meeting) · <a href="/files/Sendov_PPT_Talk.pdf">Slides, PDF</a> · <a href="/images/sendov-talk-poster.jpg">Poster</a></p>
 
 <p class="talk-entry"><strong>July 2, 2026</strong><br>
 Kadison's Theorem on Linear Order Isomorphisms of C<sup>*</sup>-Algebras Holds Without the Additivity Assumption<br>
