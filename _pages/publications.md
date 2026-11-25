@@ -5,11 +5,17 @@ layout: academic
 author_profile: true
 ---
 
-<p><strong>Last updated:</strong> October 20, 2026.</p>
+<p><strong>Last updated:</strong> November 25, 2026.</p>
 <p><a href="#complex-analysis">Complex Analysis</a> · <a href="#operator-algebra">Operator Algebra</a> · <a href="#matrix-analysis">Matrix Analysis</a> · <a href="#group-theory">Group Theory</a> · <a href="/notes/">Notes</a></p>
 <h2 id="complex-analysis">Complex Analysis</h2>
 <h3>Published and Accepted Articles</h3>
 <ol>
+<li>
+  Y. He, Q. Tang, and T. Zhang,
+  <strong>Optimal universal growth for integral means of normalized logarithmic derivatives in the Carathéodory class</strong>,
+  <cite><strong>Bull. Lond. Math. Soc.</strong></cite> (to appear).
+  [<a href="https://arxiv.org/abs/2603.23734" rel="noopener noreferrer" target="_blank">arXiv</a>]  [<a href="https://arxiv.org/pdf/2603.23734" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
 <li>
   T. Zhang,
   <strong>When do the convex hulls of zeros and critical points coincide?</strong>,
@@ -44,6 +50,41 @@ author_profile: true
 </ol>
 <h3>Preprints</h3>
 <ol>
+<li>
+  T. Zhang,
+  <strong>Kushel–Tyaglov’s problem, sharp Schoenberg-type inequalities and majorization relations between zeros and critical points</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.31058" rel="noopener noreferrer" target="_blank">arXiv:2611.31058</a>.
+  [<a href="https://arxiv.org/pdf/2611.31058" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
+  T. Zhang,
+  <strong>A proof of Schmeisser’s conjecture</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.19084" rel="noopener noreferrer" target="_blank">arXiv:2611.19084</a>.
+  [<a href="https://arxiv.org/pdf/2611.19084" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
+  A. Eremenko and T. Zhang,
+  <strong>Equilibrium points of logarithmic potentials</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.17218" rel="noopener noreferrer" target="_blank">arXiv:2611.17218</a>.
+  [<a href="https://arxiv.org/pdf/2611.17218" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
+  E. Lundberg, Z. Rosen, and T. Zhang,
+  <strong>On the number of zeros of polyanalytic polynomials</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.13278" rel="noopener noreferrer" target="_blank">arXiv:2611.13278</a>.
+  [<a href="https://arxiv.org/pdf/2611.13278" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
+  T. Zhang,
+  <strong>A proof of the Erdős–Herzog–Piranian lemniscate conjecture</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.12830" rel="noopener noreferrer" target="_blank">arXiv:2611.12830</a>.
+  [<a href="https://arxiv.org/pdf/2611.12830" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
 <li>
   A. Eremenko, T. W. Ng, and T. Zhang,
   <strong>Entire solutions of higher order Briot–Bouquet equations</strong>,
@@ -123,13 +164,6 @@ author_profile: true
 </li>
 <li>
   Y. He, Q. Tang, and T. Zhang,
-  <strong>Optimal universal growth for integral means of normalized logarithmic derivatives in the Carathéodory class</strong>,
-  preprint, 2026,
-  <a href="https://arxiv.org/abs/2603.23734" rel="noopener noreferrer" target="_blank">arXiv:2603.23734</a>.
-  [<a href="https://arxiv.org/pdf/2603.23734" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li>
-<li>
-  Y. He, Q. Tang, and T. Zhang,
   <strong>A solution to a problem of Rubel on two-parameter normal families of entire functions</strong>,
   preprint, 2026,
   <a href="https://arxiv.org/abs/2603.20883" rel="noopener noreferrer" target="_blank">arXiv:2603.20883</a>.
@@ -147,11 +181,18 @@ author_profile: true
 
 <h2 id="operator-algebra">Operator Algebra</h2>
 <h3>Published and Accepted Articles</h3>
-<ol><li>
+<ol>
+<li>
+  L. Molnár and T. Zhang,
+  <strong>Kadison’s theorem on linear order isomorphisms of C<sup>*</sup>-algebras holds without the additivity assumption</strong>,
+  <cite><strong>Bull. Lond. Math. Soc.</strong></cite> (to appear).
+  [<a href="/files/Kadison_vegleges_1.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
 T. Zhang,
-<strong>Bourin-type inequalities for τ-measurable operators in fully symmetric spaces</strong>,
-<cite>Acta Math. Sci. Ser. B (Engl. Ed.)</cite> (to appear).
-[<a href="https://arxiv.org/abs/2602.00358" rel="noopener noreferrer" target="_blank">arXiv</a>]
+<strong>Bourin type inequalities for τ-measurable operators in fully symmetric spaces</strong>,
+<cite>Acta Math. Sci. Ser. B (Engl. Ed.)</cite> <strong>46</strong> (2026), no. 6, 2650–2662.
+[<a href="https://doi.org/10.1007/s10473-026-0608-1" rel="noopener noreferrer" target="_blank">DOI</a>]  [<a href="https://arxiv.org/abs/2602.00358" rel="noopener noreferrer" target="_blank">arXiv</a>]
  [<a href="https://arxiv.org/pdf/2602.00358" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 <li>
@@ -164,6 +205,13 @@ T. Zhang,
 <h3>Preprints</h3>
 <ol>
 <li>
+  T. Zhang,
+  <strong>Clarkson–McCarthy type inequalities, part II: refinements, unitary orbits, unitarily invariant norms and ℓ<sub>s</sub>–ℓ<sub>s</sub> estimates</strong>,
+  preprint, 2026,
+  <a href="https://arxiv.org/abs/2611.00459" rel="noopener noreferrer" target="_blank">arXiv:2611.00459</a>.
+  [<a href="https://arxiv.org/pdf/2611.00459" rel="noopener noreferrer" target="_blank">PDF</a>]
+</li>
+<li>
   Z. Xu and T. Zhang,
   <strong>Sharp tangent inequalities in noncommutative L<sub>p</sub>-spaces</strong>,
   preprint, 2026,
@@ -172,7 +220,7 @@ T. Zhang,
 </li>
 <li>
   Y. He, Q. Tang, Z. Xu, and T. Zhang,
-  <strong>The nonseparable case of Kadison's problem on orthonormal bases of unitaries for type II₁ factors</strong>,
+  <strong>The solution to Kadison's problem on orthonormal bases of unitaries for type II₁ factors</strong>,
   preprint, 2026,
   <a href="https://arxiv.org/abs/2608.18405" rel="noopener noreferrer" target="_blank">arXiv:2608.18405</a>.
   [<a href="https://arxiv.org/pdf/2608.18405" rel="noopener noreferrer" target="_blank">PDF</a>]
@@ -205,12 +253,6 @@ T. Zhang,
   <a href="https://arxiv.org/abs/2602.14123" rel="noopener noreferrer" target="_blank">arXiv:2602.14123</a>.
   [<a href="https://arxiv.org/pdf/2602.14123" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
-  <li>
-  L. Molnár and T. Zhang,
-  <strong>Kadison’s theorem on linear order isomorphisms of C<sup>*</sup>-algebras holds without the additivity assumption</strong>,
-  manuscript, 2026.
-  [<a href="/files/Kadison_vegleges_1.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
-</li>
 <li>
   T. Zhang,
   <strong>Trace arithmetic–κ<sub>p</sub> inequality</strong>,
@@ -241,8 +283,8 @@ T. Zhang,
 <li>
   J.-C. Bourin and T. Zhang,
   <strong>Matrix triangle inequalities: past, present, and future</strong>,
-  <cite>Rev. Math. Phys.</cite> (to appear).
-  [<a href="/files/Bourin_Zhang_Matrix_Triangle_Inequalities.pdf" rel="noopener noreferrer" target="_blank">PDF</a>]
+  <cite>Rev. Math. Phys.</cite> (2026), Art. No. 2650023.
+  [<a href="https://doi.org/10.1142/S0129055X26500236" rel="noopener noreferrer" target="_blank">DOI</a>]  [<a href="https://arxiv.org/abs/2610.30538" rel="noopener noreferrer" target="_blank">arXiv</a>]  [<a href="https://arxiv.org/pdf/2610.30538" rel="noopener noreferrer" target="_blank">PDF</a>]
 </li>
 <li>
 T. Zhang,
@@ -268,7 +310,7 @@ T. Zhang,
   <li>
 T. Zhang,
 <strong>A counterexample to the Huang–Tam conjecture and Frobenius bounds for self-commutators under λ-Aluthge transforms</strong>,
-<cite>Proc. Amer. Math. Soc.</cite> (2026), published electronically September 3, 2026.
+<cite>Proc. Amer. Math. Soc.</cite> <strong>155</strong> (2027), no. 2, 747–757.
 [<a href="https://doi.org/10.1090/proc/17896" rel="noopener noreferrer" target="_blank">DOI</a>]
  [<a href="https://arxiv.org/abs/2603.04655" rel="noopener noreferrer" target="_blank">arXiv</a>]
  [<a href="https://arxiv.org/pdf/2603.04655" rel="noopener noreferrer" target="_blank">PDF</a>]
@@ -276,8 +318,8 @@ T. Zhang,
 <li>
       T. Zhang,
       <strong>Weak majorization inequalities for the cubic and quartic coefficients of <i>e</i><sup>(A+B)t</sup> versus <i>e</i><sup>At</sup><i>e</i><sup>Bt</sup></strong>,
-      <cite>Linear Algebra Appl.</cite> (to appear).
-      [<a href="https://arxiv.org/abs/2601.07286" rel="noopener noreferrer" target="_blank">arXiv</a>]
+      <cite>Linear Algebra Appl.</cite> <strong>755</strong> (2027), 42–57.
+      [<a href="https://doi.org/10.1016/j.laa.2026.10.036" rel="noopener noreferrer" target="_blank">DOI</a>]  [<a href="https://arxiv.org/abs/2601.07286" rel="noopener noreferrer" target="_blank">arXiv</a>]
        [<a href="https://arxiv.org/pdf/2601.07286" rel="noopener noreferrer" target="_blank">PDF</a>]
       </li>
 <li>
